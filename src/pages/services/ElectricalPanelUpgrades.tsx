@@ -6,8 +6,8 @@ const ElectricalPanelUpgrades = () => {
   return (
     <>
       <SEOHead 
-        title="Electrical Panel Upgrades for EV Chargers Long Island | 200A Service Upgrades"
-        description="Professional electrical panel upgrades for EV charger installation on Long Island. 200A service upgrades, main panel upgrades. Nassau & Suffolk Counties."  
+        title="Electrical Panel Upgrades Long Island | Ready for EV Charger Installation"
+        description="Upgrade your panel to handle EV charging. Licensed Long Island electricians. Safe, fast service across Suffolk & Nassau. Call for a free estimate."
         keywords="electrical panel upgrade Long Island, 200A service upgrade, main panel upgrade EV charger, electrical service upgrade Nassau County, Suffolk County panel upgrade"
       />
 

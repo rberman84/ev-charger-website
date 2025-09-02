@@ -6,8 +6,8 @@ const HuntingtonService = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Huntington, NY | Tesla & Home Charging Solutions"
-        description="Professional EV charger installation in Huntington, NY. Tesla Wall Connector specialists serving Suffolk County. Licensed electricians with same-day service!"
+        title="EV Charger Installation Huntington, NY | Residential & Commercial"
+        description="Huntington's trusted EV charger installers. Licensed electricians for Tesla, ChargePoint & more. Safe, fast installs for homes & businesses."
         keywords="EV charger installation Huntington NY, Tesla charger Huntington, home EV charging Huntington, electric vehicle charger Suffolk County"
       />
 

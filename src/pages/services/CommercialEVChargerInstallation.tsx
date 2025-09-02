@@ -6,8 +6,8 @@ const CommercialEVChargerInstallation = () => {
   return (
     <>
       <SEOHead 
-        title="Commercial EV Charger Installation Long Island | Workplace Charging Solutions"
-        description="Professional commercial EV charger installation on Long Island. Workplace charging stations for businesses, multi-unit properties. Nassau & Suffolk Counties."
+        title="Commercial EV Charger Installation Long Island | Business & Multi-Unit Solutions"
+        description="Install EV charging stations for your office, apartments, or retail business. Local Long Island experts. Safe, scalable, code-compliant commercial installs."
         keywords="commercial EV charger installation Long Island, workplace charging stations, business EV chargers Nassau County, multi-unit EV charging Suffolk County"
       />
 

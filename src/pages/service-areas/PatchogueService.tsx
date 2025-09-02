@@ -6,8 +6,8 @@ const PatchogueService = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Patchogue, NY | Professional Tesla & Home Charging"
-        description="Expert EV charger installation in Patchogue, NY. Tesla Wall Connector and Level 2 charging stations. Licensed Suffolk County electricians. Free estimates!"
+        title="EV Charger Installation Patchogue, NY | Licensed Local Experts"
+        description="Get your EV charger installed in Patchogue by local electricians. Tesla, ChargePoint, JuiceBox & more. Safe, professional, and fully insured."
         keywords="EV charger installation Patchogue NY, Tesla charger Patchogue, home EV charging Patchogue, electric vehicle charger Suffolk County"
       />
 

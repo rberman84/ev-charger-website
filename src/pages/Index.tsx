@@ -101,8 +101,8 @@ const Index = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Long Island | PowerUp EV - #1 Tesla & Home Charging Experts"
-        description="Professional EV charger installation throughout Long Island. Licensed experts in Tesla, home & commercial EV charging stations. Serving Nassau & Suffolk Counties. Free estimates!"
+        title="EV Charger Installation Long Island | Licensed Local Experts"
+        description="Professional EV charger installation across Long Island. Tesla, ChargePoint & more. Licensed electricians. Fast, reliable, code-compliant installs. Free estimate today."
         keywords="EV charger installation Long Island, Tesla charger installation, home EV charging station, electric vehicle charger Nassau County, Suffolk County EV installation, EV charger electrician Long Island"
         schemaData={localBusinessSchema}
       />

@@ -6,8 +6,8 @@ const PermitsInspections = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Permits & Inspections Long Island | Complete Permit Services"
-        description="Complete EV charger permit and inspection services on Long Island. We handle all permitting and coordinate inspections for Nassau & Suffolk Counties."
+        title="EV Charger Permits & Inspections Long Island | Licensed & Compliant"
+        description="We handle permits & inspections for EV charger installs across Long Island. Hassle-free, licensed, fully code-compliant. Serving Suffolk & Nassau."
         keywords="EV charger permits Long Island, electrical permits Nassau County, EV charging inspection Suffolk County, EV charger permit application"
       />
 

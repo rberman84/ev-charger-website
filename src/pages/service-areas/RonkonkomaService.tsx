@@ -6,8 +6,8 @@ const RonkonkomaService = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Ronkonkoma, NY | Tesla & Home Charging Experts"
-        description="Professional EV charger installation in Ronkonkoma, NY. Tesla Wall Connector and Level 2 home charging stations. Licensed Suffolk County electricians. Free estimates!"
+        title="EV Charger Installation Ronkonkoma, NY | Local Licensed Experts"
+        description="Professional EV charger installs in Ronkonkoma. Tesla, ChargePoint & more. Licensed, insured electricians. Safe, code-compliant work. Free local estimate."
         keywords="EV charger installation Ronkonkoma NY, Tesla charger Ronkonkoma, home EV charging station Ronkonkoma, electric vehicle charger installation Suffolk County"
       />
 

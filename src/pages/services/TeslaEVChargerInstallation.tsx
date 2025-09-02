@@ -71,8 +71,8 @@ const TeslaEVChargerInstallation = () => {
   return (
     <>
       <SEOHead 
-        title="Tesla EV Charger Installation Long Island | Certified Tesla Wall Connector Installers"
-        description="Professional Tesla Wall Connector installation on Long Island. Certified Tesla installers serving Nassau and Suffolk Counties with same-day service. Get your free Tesla charger quote today!"
+        title="Tesla EV Charger Installation Long Island | Certified Wall Connector Experts"
+        description="Get your Tesla Wall Connector professionally installed on Long Island. Licensed electricians. Fast, clean, code-compliant work. Serving Suffolk & Nassau."
         keywords="Tesla charger installation Long Island, Tesla Wall Connector installation, Tesla EV charger Nassau County, Tesla charging station Suffolk County, certified Tesla installer"
         schemaData={teslaSchema}
       />

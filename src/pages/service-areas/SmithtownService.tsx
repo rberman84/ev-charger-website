@@ -6,8 +6,8 @@ const SmithtownService = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Smithtown, NY | Tesla & Level 2 Charging Experts"
-        description="Professional EV charger installation in Smithtown, NY. Tesla Wall Connector and home charging stations. Licensed Suffolk County electricians. Same-day service!"
+        title="EV Charger Installation Smithtown, NY | Professional Local Installers"
+        description="Trusted EV charger installation in Smithtown. Licensed electricians. Tesla, ChargePoint & more. Clean, reliable, and code-compliant. Call today."
         keywords="EV charger installation Smithtown NY, Tesla charger Smithtown, Level 2 charging station Smithtown, electric vehicle charger Suffolk County"
       />
 

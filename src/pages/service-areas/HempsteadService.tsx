@@ -6,8 +6,8 @@ const HempsteadService = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Hempstead, NY | Tesla & Home Charging Experts"
-        description="Professional EV charger installation in Hempstead, NY. Tesla Wall Connector and Level 2 charging stations. Licensed Nassau County electricians. Free estimates!"
+        title="EV Charger Installation Hempstead, NY | Certified Local Electricians"
+        description="EV charger installation in Hempstead. Licensed & insured electricians. Tesla, ChargePoint, JuiceBox & more. Professional installs, free estimates."
         keywords="EV charger installation Hempstead NY, Tesla charger Hempstead, home EV charging Hempstead, electric vehicle charger Nassau County"
       />
 

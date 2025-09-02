@@ -6,8 +6,8 @@ const HomeEVChargerInstallation = () => {
   return (
     <>
       <SEOHead 
-        title="Home EV Charger Installation Long Island | Level 2 Charging Stations"
-        description="Professional home EV charger installation on Long Island. Level 2 charging stations for all electric vehicles. Nassau & Suffolk Counties. Free estimates!"
+        title="Home EV Charger Installation Long Island | Level 2 Charging at Home"
+        description="Charge your EV faster with a home Level 2 charger. Licensed Long Island electricians. Safe installs for Tesla, ChargePoint & more. Free consultation today."
         keywords="home EV charger installation Long Island, Level 2 EV charger, home charging station Nassau County, residential EV charger Suffolk County"
       />
 
