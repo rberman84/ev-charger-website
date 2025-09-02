@@ -27,6 +27,7 @@ import HempsteadService from "./pages/service-areas/HempsteadService";
 // Other Pages
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import ServiceAreas from "./pages/ServiceAreas";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ const App = () => (
               <Route path="/service-areas/hempstead" element={<HempsteadService />} />
               
               {/* Other Pages */}
+              <Route path="/service-areas" element={<ServiceAreas />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
               
