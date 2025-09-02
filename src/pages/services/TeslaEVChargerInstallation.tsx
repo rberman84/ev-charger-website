@@ -19,7 +19,16 @@ const TeslaEVChargerInstallation = () => {
         {"@type": "Place", "name": "Long Island"},
         {"@type": "AdministrativeArea", "name": "Suffolk County"},
         {"@type": "AdministrativeArea", "name": "Nassau County"}
-      ]
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tesla Charging Services",
+        "itemListElement": [
+          {"@type": "Offer", "name": "Tesla Wall Connector Install", "url": "https://powerupevli.com/services/tesla-ev-charger-installation"},
+          {"@type": "Offer", "name": "Tesla Charger Panel Upgrades", "url": "https://powerupevli.com/services/electrical-panel-upgrades"},
+          {"@type": "Offer", "name": "Tesla Installation Permits", "url": "https://powerupevli.com/services/permits-inspections"}
+        ]
+      }
     },
     {
       "@context": "https://schema.org",

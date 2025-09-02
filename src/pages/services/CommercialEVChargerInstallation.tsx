@@ -21,7 +21,16 @@ const CommercialEVChargerInstallation = () => {
               {"@type": "Place", "name": "Long Island"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
-            ]
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Commercial EV Charging Services",
+              "itemListElement": [
+                {"@type": "Offer", "name": "Commercial EV Charging Stations", "url": "https://powerupevli.com/services/commercial-ev-charger-installation"},
+                {"@type": "Offer", "name": "Multi-Unit Charging Solutions", "url": "https://powerupevli.com/services/commercial-ev-charger-installation"},
+                {"@type": "Offer", "name": "Workplace Charging Stations", "url": "https://powerupevli.com/services/commercial-ev-charger-installation"}
+              ]
+            }
           },
           {
             "@context": "https://schema.org",

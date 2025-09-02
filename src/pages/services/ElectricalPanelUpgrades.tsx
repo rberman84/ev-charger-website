@@ -21,7 +21,16 @@ const ElectricalPanelUpgrades = () => {
               {"@type": "Place", "name": "Long Island"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
-            ]
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Electrical Panel Services",
+              "itemListElement": [
+                {"@type": "Offer", "name": "Panel Upgrades for EV Chargers", "url": "https://powerupevli.com/services/electrical-panel-upgrades"},
+                {"@type": "Offer", "name": "200 Amp Panel Installation", "url": "https://powerupevli.com/services/electrical-panel-upgrades"},
+                {"@type": "Offer", "name": "Electrical Service Upgrades", "url": "https://powerupevli.com/services/electrical-panel-upgrades"}
+              ]
+            }
           },
           {
             "@context": "https://schema.org",

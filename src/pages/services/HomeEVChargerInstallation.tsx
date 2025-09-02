@@ -21,7 +21,16 @@ const HomeEVChargerInstallation = () => {
               {"@type": "Place", "name": "Long Island"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
-            ]
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Home EV Charging Services",
+              "itemListElement": [
+                {"@type": "Offer", "name": "Home Level 2 Charger Install", "url": "https://powerupevli.com/services/home-ev-charger-installation"},
+                {"@type": "Offer", "name": "ChargePoint Installation", "url": "https://powerupevli.com/services/home-ev-charger-installation"},
+                {"@type": "Offer", "name": "JuiceBox Installation", "url": "https://powerupevli.com/services/home-ev-charger-installation"}
+              ]
+            }
           },
           {
             "@context": "https://schema.org",

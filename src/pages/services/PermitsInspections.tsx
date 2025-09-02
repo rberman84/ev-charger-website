@@ -21,7 +21,16 @@ const PermitsInspections = () => {
               {"@type": "Place", "name": "Long Island"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
-            ]
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Permit & Inspection Services",
+              "itemListElement": [
+                {"@type": "Offer", "name": "EV Charger Permits", "url": "https://powerupevli.com/services/permits-inspections"},
+                {"@type": "Offer", "name": "Electrical Inspections", "url": "https://powerupevli.com/services/permits-inspections"},
+                {"@type": "Offer", "name": "Code Compliance Services", "url": "https://powerupevli.com/services/permits-inspections"}
+              ]
+            }
           },
           {
             "@context": "https://schema.org",
