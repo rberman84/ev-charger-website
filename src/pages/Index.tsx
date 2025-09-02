@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MapPin, Star, CheckCircle2, Phone, Users, Award, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   // Schema data for local business
@@ -294,10 +295,12 @@ const Index = () => {
 
           <div className="text-center">
             <p className="text-silver mb-4">Don't see your area listed? We likely serve your location too!</p>
-            <Button size="lg" className="bg-electric-green text-navy-deep border-electric-green hover:bg-electric-green/90 hover:scale-105 transition-all duration-300 font-semibold">
-              <Phone className="w-5 h-5 mr-2" />
-              Call for Service Area Confirmation
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-electric-green text-navy-deep border-electric-green hover:bg-electric-green/90 hover:scale-105 transition-all duration-300 font-semibold">
+                <Phone className="w-5 h-5 mr-2" />
+                Call for Service Area Confirmation
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -372,9 +375,11 @@ const Index = () => {
 
           <div className="text-center mt-8">
             <p className="text-silver mb-4">Have more questions about EV charger installation?</p>
-            <Button size="lg" className="bg-gradient-accent hover:scale-105 transition-all duration-300">
-              Contact Our EV Experts
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-gradient-accent hover:scale-105 transition-all duration-300">
+                Contact Our EV Experts
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -390,12 +395,15 @@ const Index = () => {
             EV charger installation. Get your free estimate today and start charging at home tomorrow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-white text-navy-deep hover:bg-white/90 hover:scale-105 transition-all duration-300 text-lg px-8 py-4"
-            >
-              Get Free Estimate Now
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-white text-navy-deep hover:bg-white/90 hover:scale-105 transition-all duration-300 text-lg px-8 py-4"
+              >
+                Get Free Estimate Now
+              </Button>
+            </Link>
+            <Link to="tel:(631) 555-0100">
               <Button 
                 variant="outline" 
                 size="lg" 
@@ -404,6 +412,7 @@ const Index = () => {
                 <Phone className="w-5 h-5 mr-2" />
                 (631) 555-0100
               </Button>
+            </Link>
           </div>
         </div>
       </section>

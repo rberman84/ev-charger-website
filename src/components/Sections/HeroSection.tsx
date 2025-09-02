@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-ev-charger.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -51,20 +52,24 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-white text-navy-deep hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-glow text-lg px-8 py-4"
-              >
-                Get Free Estimate
-              </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-electric-green text-electric-green bg-electric-green/10 hover:bg-electric-green hover:text-navy-deep transition-all duration-300 text-lg px-8 py-4 font-semibold"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              (631) 555-0100
-            </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-navy-deep hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-glow text-lg px-8 py-4"
+                >
+                  Get Free Estimate
+                </Button>
+              </Link>
+              <Link to="tel:(631) 555-0100">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-electric-green text-electric-green bg-electric-green/10 hover:bg-electric-green hover:text-navy-deep transition-all duration-300 text-lg px-8 py-4 font-semibold"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  (631) 555-0100
+                </Button>
+              </Link>
             </div>
 
             {/* Trust Indicators */}
