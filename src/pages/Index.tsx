@@ -1,6 +1,7 @@
 import SEOHead from "@/components/SEO/SEOHead";
 import HeroSection from "@/components/Sections/HeroSection";
 import ServicesSection from "@/components/Sections/ServicesSection";
+import EVInstallationAnimation from "@/components/Sections/EVInstallationAnimation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -191,6 +192,8 @@ const Index = () => {
       />
 
       <HeroSection />
+
+      <EVInstallationAnimation />
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-white">
