@@ -50,8 +50,8 @@ const Header = () => {
 
           {/* CTA Section */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-navy-deep">
-              <Phone className="w-4 h-4" />
+            <div className="flex items-center space-x-2 text-electric-green">
+              <Phone className="w-4 h-4 text-electric-green" />
               <span className="font-semibold">(631) 555-0100</span>
             </div>
             <Button 
@@ -94,8 +94,8 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 border-t border-silver/20 mt-4">
-                <div className="flex items-center space-x-2 text-navy-deep mb-3">
-                  <Phone className="w-4 h-4" />
+                <div className="flex items-center space-x-2 text-electric-green mb-3">
+                  <Phone className="w-4 h-4 text-electric-green" />
                   <span className="font-semibold">(631) 555-0100</span>
                 </div>
                 <Button className="w-full bg-gradient-accent">

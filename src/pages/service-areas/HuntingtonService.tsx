@@ -68,7 +68,7 @@ const HuntingtonService = () => {
               Our Tesla-certified electricians provide professional installation of Wall Connectors, Level 2 home chargers, and complete electrical upgrades.
             </p>
             <div className="mt-8">
-              <Button size="lg" className="bg-gradient-accent hover:scale-105 transition-all duration-300 mr-4">
+              <Button size="lg" className="bg-electric-green text-navy-deep border-electric-green hover:bg-electric-green/90 hover:scale-105 transition-all duration-300 mr-4 font-semibold">
                 <Phone className="w-5 h-5 mr-2" />
                 (631) 555-0100
               </Button>
