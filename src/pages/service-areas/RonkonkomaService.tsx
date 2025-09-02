@@ -9,6 +9,33 @@ const RonkonkomaService = () => {
         title="EV Charger Installation Ronkonkoma, NY | Local Licensed Experts"
         description="Professional EV charger installs in Ronkonkoma. Tesla, ChargePoint & more. Licensed, insured electricians. Safe, code-compliant work. Free local estimate."
         keywords="EV charger installation Ronkonkoma NY, Tesla charger Ronkonkoma, home EV charging station Ronkonkoma, electric vehicle charger installation Suffolk County"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "EV Charger Installation",
+            "name": "EV Charger Installation Ronkonkoma, NY",
+            "description": "Local EV charger installers in Ronkonkoma, NY. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "City", "name": "Ronkonkoma"},
+              {"@type": "City", "name": "Holbrook"},
+              {"@type": "City", "name": "Islandia"},
+              {"@type": "City", "name": "Bohemia"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"}
+            ],
+            "serviceArea": {"@type": "AdministrativeArea", "name": "Town of Islip"}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://powerupevli.com/service-areas"},
+              {"@type": "ListItem", "position": 3, "name": "Ronkonkoma, NY", "item": "https://powerupevli.com/service-areas/ronkonkoma"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

@@ -9,6 +9,30 @@ const HomeEVChargerInstallation = () => {
         title="Home EV Charger Installation Long Island | Level 2 Charging at Home"
         description="Charge your EV faster with a home Level 2 charger. Licensed Long Island electricians. Safe installs for Tesla, ChargePoint & more. Free consultation today."
         keywords="home EV charger installation Long Island, Level 2 EV charger, home charging station Nassau County, residential EV charger Suffolk County"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Home EV Charger Installation",
+            "name": "Home EV Charger Installation Long Island",
+            "description": "Licensed installation of Level 2 EV chargers (Tesla, ChargePoint, JuiceBox, Wallbox) for homes across Long Island.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "Place", "name": "Long Island"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"},
+              {"@type": "AdministrativeArea", "name": "Nassau County"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://powerupevli.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Home EV Charger Installation", "item": "https://powerupevli.com/services/home-ev-charger-installation"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

@@ -9,6 +9,33 @@ const HempsteadService = () => {
         title="EV Charger Installation Hempstead, NY | Certified Local Electricians"
         description="EV charger installation in Hempstead. Licensed & insured electricians. Tesla, ChargePoint, JuiceBox & more. Professional installs, free estimates."
         keywords="EV charger installation Hempstead NY, Tesla charger Hempstead, home EV charging Hempstead, electric vehicle charger Nassau County"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "EV Charger Installation",
+            "name": "EV Charger Installation Hempstead, NY",
+            "description": "Local EV charger installers in Hempstead, NY. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "City", "name": "Hempstead"},
+              {"@type": "City", "name": "West Hempstead"},
+              {"@type": "City", "name": "Uniondale"},
+              {"@type": "City", "name": "Roosevelt"},
+              {"@type": "AdministrativeArea", "name": "Nassau County"}
+            ],
+            "serviceArea": {"@type": "AdministrativeArea", "name": "Town of Hempstead"}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://powerupevli.com/service-areas"},
+              {"@type": "ListItem", "position": 3, "name": "Hempstead, NY", "item": "https://powerupevli.com/service-areas/hempstead"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

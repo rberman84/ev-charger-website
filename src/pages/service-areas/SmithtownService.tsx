@@ -9,6 +9,33 @@ const SmithtownService = () => {
         title="EV Charger Installation Smithtown, NY | Professional Local Installers"
         description="Trusted EV charger installation in Smithtown. Licensed electricians. Tesla, ChargePoint & more. Clean, reliable, and code-compliant. Call today."
         keywords="EV charger installation Smithtown NY, Tesla charger Smithtown, Level 2 charging station Smithtown, electric vehicle charger Suffolk County"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "EV Charger Installation",
+            "name": "EV Charger Installation Smithtown, NY",
+            "description": "Local EV charger installers in Smithtown, NY. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "City", "name": "Smithtown"},
+              {"@type": "City", "name": "Nesconset"},
+              {"@type": "City", "name": "Hauppauge"},
+              {"@type": "City", "name": "St. James"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"}
+            ],
+            "serviceArea": {"@type": "AdministrativeArea", "name": "Town of Smithtown"}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://powerupevli.com/service-areas"},
+              {"@type": "ListItem", "position": 3, "name": "Smithtown, NY", "item": "https://powerupevli.com/service-areas/smithtown"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

@@ -9,6 +9,33 @@ const HuntingtonService = () => {
         title="EV Charger Installation Huntington, NY | Residential & Commercial"
         description="Huntington's trusted EV charger installers. Licensed electricians for Tesla, ChargePoint & more. Safe, fast installs for homes & businesses."
         keywords="EV charger installation Huntington NY, Tesla charger Huntington, home EV charging Huntington, electric vehicle charger Suffolk County"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "EV Charger Installation",
+            "name": "EV Charger Installation Huntington, NY",
+            "description": "Local EV charger installers in Huntington, NY. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "City", "name": "Huntington"},
+              {"@type": "City", "name": "Huntington Station"},
+              {"@type": "City", "name": "Cold Spring Harbor"},
+              {"@type": "City", "name": "Centerport"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"}
+            ],
+            "serviceArea": {"@type": "AdministrativeArea", "name": "Town of Huntington"}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://powerupevli.com/service-areas"},
+              {"@type": "ListItem", "position": 3, "name": "Huntington, NY", "item": "https://powerupevli.com/service-areas/huntington"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

@@ -62,6 +62,24 @@ const Blog = () => {
         title="EV Charger Installation Blog | Long Island Electric Vehicle Charging Tips & Guides"
         description="Expert insights on EV charger installation, costs, permits, and best practices for Long Island homeowners and businesses. Latest EV charging news and guides."
         keywords="EV charger installation blog, electric vehicle charging tips Long Island, EV charger costs, Tesla charger guides, home charging station advice"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "PowerUp EV Long Island Blog",
+            "description": "Expert insights on EV charger installation, costs, permits, and best practices for Long Island homeowners and businesses.",
+            "url": "https://powerupevli.com/blog",
+            "publisher": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://powerupevli.com/blog"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

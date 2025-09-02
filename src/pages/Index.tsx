@@ -10,43 +10,126 @@ const Index = () => {
   // Schema data for local business
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Electrician",
+    "@id": "https://powerupevli.com#company",
     "name": "PowerUp EV Long Island",
-    "alternateName": "PowerUp EV",
-    "description": "Professional EV charger installation throughout Long Island. Licensed experts in Tesla, home & commercial EV charging stations.",
     "url": "https://powerupevli.com",
     "telephone": "(631) 555-0100",
-    "email": "info@powerupevli.com",
+    "logo": "https://powerupevli.com/logo.png",
+    "image": "https://powerupevli.com/og-image-ev-charger.jpg",
+    "priceRange": "$$",
+    "description": "EV charger installation on Long Island. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant installs across Suffolk & Nassau.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Long Island",
+      "streetAddress": "123 Main Street",
+      "addressLocality": "Ronkonkoma",
       "addressRegion": "NY",
+      "postalCode": "11779",
       "addressCountry": "US"
     },
+    "areaServed": [
+      {"@type": "City", "name": "Ronkonkoma"},
+      {"@type": "City", "name": "Patchogue"},
+      {"@type": "City", "name": "Smithtown"},
+      {"@type": "City", "name": "Huntington"},
+      {"@type": "City", "name": "Hempstead"},
+      {"@type": "AdministrativeArea", "name": "Suffolk County"},
+      {"@type": "AdministrativeArea", "name": "Nassau County"},
+      {"@type": "Place", "name": "Long Island"}
+    ],
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "40.7891",
-      "longitude": "-73.1350"
+      "latitude": "40.808",
+      "longitude": "-73.122"
     },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Nassau County"
-      },
-      {
-        "@type": "City", 
-        "name": "Suffolk County"
-      }
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "19:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "18:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "17:00"}
     ],
-    "serviceType": "EV Charger Installation",
-    "priceRange": "$$",
-    "openingHours": "Mo-Su 07:00-19:00",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
       "reviewCount": "127"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Michael Rodriguez"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "PowerUp EV installed my Tesla Wall Connector perfectly. Professional work, clean installation, and they handled all the permits. Highly recommend!",
+        "datePublished": "2024-01-15"
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Sarah Chen"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "Excellent service from start to finish. They upgraded my electrical panel and installed the EV charger in one day. Very knowledgeable team.",
+        "datePublished": "2024-01-10"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/powerupevli",
+      "https://www.instagram.com/powerupevli",
+      "https://www.linkedin.com/company/powerupevli"
+    ]
+  };
+
+  // Website Schema
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://powerupevli.com",
+    "name": "PowerUp EV Long Island",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://powerupevli.com/search?q={query}",
+      "query-input": "required name=query"
     }
   };
+
+  // FAQ Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does a home EV charger installation take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most residential EV charger installations take 2-4 hours. If electrical panel upgrades are needed, installation may take 4-8 hours. We complete most installations in a single day, including permit and inspection coordination."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a panel upgrade for a Level 2 charger?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many homes built before 2000 may need electrical panel upgrades to support Level 2 EV charging. We'll assess your current electrical system and recommend upgrades only if necessary. Most modern panels can support EV chargers with minor modifications."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which EV charger brands do you install?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We install all major EV charger brands including Tesla Wall Connector, ChargePoint, JuiceBox, Grizzl-E, ClipperCreek, Wallbox, and more. We'll help you choose the best charger for your vehicle and home setup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle permits and inspections?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we handle all permit applications and coordinate inspections with local authorities throughout Nassau and Suffolk Counties. Our installations meet all local electrical codes and safety requirements."
+        }
+      }
+    ]
+  };
+
+  // Combine all schemas
+  const combinedSchema = [localBusinessSchema, websiteSchema, faqSchema];
 
   const serviceAreas = [
     "Ronkonkoma", "Patchogue", "Smithtown", "Huntington", "Hempstead", 
@@ -104,7 +187,7 @@ const Index = () => {
         title="EV Charger Installation Long Island | Licensed Local Experts"
         description="Professional EV charger installation across Long Island. Tesla, ChargePoint & more. Licensed electricians. Fast, reliable, code-compliant installs. Free estimate today."
         keywords="EV charger installation Long Island, Tesla charger installation, home EV charging station, electric vehicle charger Nassau County, Suffolk County EV installation, EV charger electrician Long Island"
-        schemaData={localBusinessSchema}
+        schemaData={combinedSchema}
       />
 
       <HeroSection />

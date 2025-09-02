@@ -9,6 +9,30 @@ const ElectricalPanelUpgrades = () => {
         title="Electrical Panel Upgrades Long Island | Ready for EV Charger Installation"
         description="Upgrade your panel to handle EV charging. Licensed Long Island electricians. Safe, fast service across Suffolk & Nassau. Call for a free estimate."
         keywords="electrical panel upgrade Long Island, 200A service upgrade, main panel upgrade EV charger, electrical service upgrade Nassau County, Suffolk County panel upgrade"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Electrical Panel Upgrades",
+            "name": "Electrical Panel Upgrades for EV Chargers Long Island",
+            "description": "Professional electrical panel upgrades to support EV charger installation throughout Nassau and Suffolk Counties. 200A service upgrades and main panel replacements.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "Place", "name": "Long Island"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"},
+              {"@type": "AdministrativeArea", "name": "Nassau County"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://powerupevli.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Electrical Panel Upgrades", "item": "https://powerupevli.com/services/electrical-panel-upgrades"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

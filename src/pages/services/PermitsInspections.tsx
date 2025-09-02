@@ -9,6 +9,30 @@ const PermitsInspections = () => {
         title="EV Charger Permits & Inspections Long Island | Licensed & Compliant"
         description="We handle permits & inspections for EV charger installs across Long Island. Hassle-free, licensed, fully code-compliant. Serving Suffolk & Nassau."
         keywords="EV charger permits Long Island, electrical permits Nassau County, EV charging inspection Suffolk County, EV charger permit application"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "EV Charger Permits & Inspections",
+            "name": "Permits & Inspections for EV Charger Installation Long Island",
+            "description": "Complete permit handling and inspection coordination for all EV charger installations throughout Nassau and Suffolk Counties.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "Place", "name": "Long Island"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"},
+              {"@type": "AdministrativeArea", "name": "Nassau County"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://powerupevli.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Permits & Inspections", "item": "https://powerupevli.com/services/permits-inspections"}
+            ]
+          }
+        ]}  
       />
 
       <div className="min-h-screen bg-background">

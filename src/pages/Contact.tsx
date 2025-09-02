@@ -12,6 +12,24 @@ const Contact = () => {
         title="Contact PowerUp EV | EV Charger Installation Long Island | Free Estimates"
         description="Contact PowerUp EV for professional EV charger installation throughout Long Island. Free estimates, same-day service. Call (631) 555-0100 or request a quote online."
         keywords="contact EV charger installer Long Island, EV charger installation quote, Tesla charger installation estimate, Nassau Suffolk County electrician"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact PowerUp EV Long Island",
+            "description": "Contact PowerUp EV for professional EV charger installation throughout Long Island.",
+            "url": "https://powerupevli.com/contact",
+            "mainEntity": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://powerupevli.com/contact"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

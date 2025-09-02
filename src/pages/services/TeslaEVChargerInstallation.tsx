@@ -6,33 +6,61 @@ import { CheckCircle2, Zap, Shield, Clock, Phone, Star } from "lucide-react";
 import teslaImage from "@/assets/tesla-installation.jpg";
 
 const TeslaEVChargerInstallation = () => {
-  const teslaSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Tesla EV Charger Installation Long Island",
-    "description": "Professional Tesla Wall Connector installation on Long Island. Certified Tesla installers serving Nassau and Suffolk Counties with same-day service.",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "PowerUp EV Long Island"
+  const teslaSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tesla EV Charger Installation",
+      "name": "Tesla EV Charger Installation Long Island",
+      "description": "Professional installation of Tesla Wall Connectors and Level 2 charging for homes and businesses across Long Island.",
+      "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+      "brand": {"@type": "Brand", "name": "Tesla"},
+      "areaServed": [
+        {"@type": "Place", "name": "Long Island"},
+        {"@type": "AdministrativeArea", "name": "Suffolk County"},
+        {"@type": "AdministrativeArea", "name": "Nassau County"}
+      ]
     },
-    "areaServed": {
-      "@type": "State",
-      "name": "New York"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Tesla Charger Installation Services",
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
       "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://powerupevli.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Tesla EV Charger Installation", "item": "https://powerupevli.com/services/tesla-ev-charger-installation"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Tesla Wall Connector Installation"
+          "@type": "Question",
+          "name": "How fast does a Tesla Wall Connector charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tesla Wall Connector provides up to 44 miles of range per hour of charging, making it the fastest Level 2 charging solution available for Tesla vehicles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Tesla Wall Connector compatible with other EVs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tesla Wall Connector is designed specifically for Tesla vehicles. For other EVs, we recommend universal Level 2 chargers like ChargePoint or JuiceBox."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does Tesla Wall Connector installation cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tesla Wall Connector installation typically costs $1,545-$2,095 including the unit, standard installation, permits and inspection. Final cost depends on electrical upgrades needed."
           }
         }
       ]
     }
-  };
+  ];
 
   const teslaFeatures = [
     "Up to 44 miles of range per hour of charging",

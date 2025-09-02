@@ -9,6 +9,30 @@ const CommercialEVChargerInstallation = () => {
         title="Commercial EV Charger Installation Long Island | Business & Multi-Unit Solutions"
         description="Install EV charging stations for your office, apartments, or retail business. Local Long Island experts. Safe, scalable, code-compliant commercial installs."
         keywords="commercial EV charger installation Long Island, workplace charging stations, business EV chargers Nassau County, multi-unit EV charging Suffolk County"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Commercial EV Charger Installation",
+            "name": "Commercial EV Charger Installation Long Island",
+            "description": "Professional installation of commercial EV charging stations for businesses, multi-unit properties, and fleet operators across Long Island.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "Place", "name": "Long Island"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"},
+              {"@type": "AdministrativeArea", "name": "Nassau County"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://powerupevli.com/services"},
+              {"@type": "ListItem", "position": 3, "name": "Commercial EV Charger Installation", "item": "https://powerupevli.com/services/commercial-ev-charger-installation"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">

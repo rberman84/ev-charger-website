@@ -9,6 +9,33 @@ const PatchogueService = () => {
         title="EV Charger Installation Patchogue, NY | Licensed Local Experts"
         description="Get your EV charger installed in Patchogue by local electricians. Tesla, ChargePoint, JuiceBox & more. Safe, professional, and fully insured."
         keywords="EV charger installation Patchogue NY, Tesla charger Patchogue, home EV charging Patchogue, electric vehicle charger Suffolk County"
+        schemaData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "EV Charger Installation",
+            "name": "EV Charger Installation Patchogue, NY",
+            "description": "Local EV charger installers in Patchogue, NY. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant.",
+            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "areaServed": [
+              {"@type": "City", "name": "Patchogue"},
+              {"@type": "City", "name": "East Patchogue"},
+              {"@type": "City", "name": "North Patchogue"},
+              {"@type": "City", "name": "Medford"},
+              {"@type": "AdministrativeArea", "name": "Suffolk County"}
+            ],
+            "serviceArea": {"@type": "AdministrativeArea", "name": "Town of Brookhaven"}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://powerupevli.com/service-areas"},
+              {"@type": "ListItem", "position": 3, "name": "Patchogue, NY", "item": "https://powerupevli.com/service-areas/patchogue"}
+            ]
+          }
+        ]}
       />
 
       <div className="min-h-screen bg-background">
