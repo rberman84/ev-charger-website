@@ -126,10 +126,12 @@ const Blog = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-silver mb-4">{post.excerpt}</p>
-                    <Button variant="outline" className="w-full group hover:bg-electric-green hover:text-white hover:border-electric-green transition-all duration-300">
-                      Read More
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                    <Link to={`/blog/${post.slug}`}>
+                      <Button variant="outline" className="w-full group hover:bg-electric-green hover:text-white hover:border-electric-green transition-all duration-300">
+                        Read More
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
