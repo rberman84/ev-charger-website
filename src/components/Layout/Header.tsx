@@ -54,12 +54,14 @@ const Header = () => {
               <Phone className="w-4 h-4 text-electric-green" />
               <span className="font-semibold">(631) 555-0100</span>
             </div>
-            <Button 
-              size="sm" 
-              className="bg-gradient-accent hover:scale-105 transition-all duration-300 shadow-glow"
-            >
-              Free Estimate
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="sm" 
+                className="bg-gradient-accent hover:scale-105 transition-all duration-300 shadow-glow"
+              >
+                Free Estimate
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,9 +100,11 @@ const Header = () => {
                   <Phone className="w-4 h-4 text-electric-green" />
                   <span className="font-semibold">(631) 555-0100</span>
                 </div>
-                <Button className="w-full bg-gradient-accent">
-                  Free Estimate
-                </Button>
+                <Link to="/contact">
+                  <Button className="w-full bg-gradient-accent">
+                    Free Estimate
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>
