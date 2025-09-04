@@ -9,9 +9,9 @@ const CommercialEVChargingBenefits = () => {
   return (
     <>
       <SEOHead 
-        title="Commercial EV Charging Station Benefits | Long Island Business Guide"
-        description="Why Long Island businesses should install EV charging stations and how they benefit customers, employees, and the bottom line."
-        keywords="commercial EV charging Long Island, business EV charging stations, workplace charging benefits Nassau Suffolk"
+        title="Commercial EV Charging Station Benefits | Suffolk County Business Guide"
+        description="Why Suffolk County businesses should install EV charging stations and how they benefit customers, employees, and the bottom line."
+        keywords="commercial EV charging Suffolk County, business EV charging stations, workplace charging benefits Nassau Suffolk"
       />
       
       <article className="min-h-screen bg-background">
@@ -28,7 +28,7 @@ const CommercialEVChargingBenefits = () => {
                 Commercial EV Charging Station Benefits
               </h1>
               <p className="text-xl text-white/90 mb-6">
-                Why Long Island businesses should install EV charging stations and how they benefit customers, employees, and the bottom line.
+                Why Suffolk County businesses should install EV charging stations and how they benefit customers, employees, and the bottom line.
               </p>
               <div className="flex items-center space-x-4 text-sm text-white/80">
                 <span>December 15, 2023</span>

@@ -20,7 +20,7 @@ const Index = () => {
     "logo": "https://powerupevli.com/logo.png",
     "image": "https://powerupevli.com/og-image-ev-charger.jpg",
     "priceRange": "$$",
-    "description": "EV charger installation on Long Island. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant installs across Suffolk & Nassau.",
+    "description": "EV charger installation in Suffolk County. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant installs across Suffolk & Nassau.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Main Street",
@@ -37,7 +37,7 @@ const Index = () => {
       {"@type": "City", "name": "Hempstead"},
       {"@type": "AdministrativeArea", "name": "Suffolk County"},
       {"@type": "AdministrativeArea", "name": "Nassau County"},
-      {"@type": "Place", "name": "Long Island"}
+      {"@type": "Place", "name": "Suffolk County"}
     ],
     "geo": {
       "@type": "GeoCoordinates",
@@ -162,7 +162,7 @@ const Index = () => {
 
   const faqs = [
     {
-      question: "How much does EV charger installation cost on Long Island?",
+      question: "How much does EV charger installation cost in Suffolk County?",
       answer: "EV charger installation costs typically range from $800-$2,500 depending on the charger type, electrical upgrades needed, and installation complexity. Tesla Wall Connectors typically cost $1,200-$1,800 installed. We provide free estimates with transparent pricing."
     },
     {
@@ -186,9 +186,9 @@ const Index = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Long Island | Licensed Local Experts"
-        description="Professional EV charger installation across Long Island. Tesla, ChargePoint & more. Licensed electricians. Fast, reliable, code-compliant installs. Free estimate today."
-        keywords="EV charger installation Long Island, Tesla charger installation, home EV charging station, electric vehicle charger Nassau County, Suffolk County EV installation, EV charger electrician Long Island"
+        title="EV Charger Installation Suffolk County | Licensed Local Experts"
+        description="Professional EV charger installation across Suffolk County. Tesla, ChargePoint & more. Licensed electricians. Fast, reliable, code-compliant installs. Free estimate today."
+        keywords="EV charger installation Suffolk County, Tesla charger installation, home EV charging station, electric vehicle charger Nassau County, Suffolk County EV installation, EV charger electrician Suffolk County"
         schemaData={combinedSchema}
       />
 
@@ -279,7 +279,7 @@ const Index = () => {
               EV Charger Installation Service Areas
             </h2>
             <p className="text-lg text-silver max-w-3xl mx-auto">
-              We provide professional EV charger installation throughout Suffolk County on Long Island. 
+              We provide professional EV charger installation throughout Suffolk County. 
               Our certified electricians serve residential and commercial customers across all major communities.
             </p>
           </div>
@@ -310,7 +310,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-deep mb-4">
-              What Our Long Island Customers Say
+              What Our Suffolk County Customers Say
             </h2>
             <div className="flex items-center justify-center space-x-2 mb-4">
               <div className="flex space-x-1">

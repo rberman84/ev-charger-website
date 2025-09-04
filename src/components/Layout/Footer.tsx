@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold">EV Charger Installation Suffolk</h3>
-                <p className="text-sm text-electric-green">Long Island's #1 EV Charger Experts</p>
+                <p className="text-sm text-electric-green">Suffolk County's #1 EV Charger Experts</p>
               </div>
             </div>
             <p className="text-sm text-silver-light leading-relaxed">
@@ -74,7 +74,7 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 text-electric-green mt-0.5" />
                 <div>
                   <p>Serving Nassau & Suffolk Counties</p>
-                  <p className="text-silver-light">Long Island, NY</p>
+                  <p className="text-silver-light">Suffolk County, NY</p>
                 </div>
               </div>
             </div>

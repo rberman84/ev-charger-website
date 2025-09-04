@@ -12,7 +12,7 @@ interface SEOHeadProps {
 const SEOHead = ({
   title = "EV Charger Installation Suffolk | Licensed Local Experts",
   description = "Professional EV charger installation throughout Suffolk County. Licensed experts in Tesla, home & commercial EV charging stations. Serving all Suffolk County. Free estimates!",
-  keywords = "EV charger installation Long Island, Tesla charger installation, home EV charging station, electric vehicle charger Nassau County, Suffolk County EV installation",
+  keywords = "EV charger installation Suffolk County, Tesla charger installation, home EV charging station, electric vehicle charger Nassau County, Suffolk County EV installation",
   canonicalUrl,
   ogImage = "/og-image.jpg",
   schemaData

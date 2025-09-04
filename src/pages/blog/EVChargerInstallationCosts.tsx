@@ -9,9 +9,9 @@ const EVChargerInstallationCosts = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Costs Long Island | What to Expect in 2025"
-        description="How much does it cost to install an EV charger on Long Island? Learn price ranges, panel upgrade costs, and what impacts installation."
-        keywords="EV charger installation cost Long Island, electric vehicle charger price Suffolk County, Nassau County EV installation"
+        title="EV Charger Installation Costs Suffolk County | What to Expect in 2025"
+        description="How much does it cost to install an EV charger in Suffolk County? Learn price ranges, panel upgrade costs, and what impacts installation."
+        keywords="EV charger installation cost Suffolk County, electric vehicle charger price Suffolk County, Nassau County EV installation"
       />
       
       <article className="min-h-screen bg-background">
@@ -25,10 +25,10 @@ const EVChargerInstallationCosts = () => {
             <div className="max-w-4xl">
               <Badge className="bg-white/10 text-white mb-4">Cost Guide</Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                EV Charger Installation Costs Long Island | What to Expect in 2025
+                EV Charger Installation Costs Suffolk County | What to Expect in 2025
               </h1>
               <p className="text-xl text-white/90 mb-6">
-                How much does it cost to install an EV charger on Long Island? Learn price ranges, panel upgrade costs, and what impacts installation pricing.
+                How much does it cost to install an EV charger in Suffolk County? Learn price ranges, panel upgrade costs, and what impacts installation pricing.
               </p>
               <div className="flex items-center space-x-4 text-sm text-white/80">
                 <span>January 10, 2024</span>

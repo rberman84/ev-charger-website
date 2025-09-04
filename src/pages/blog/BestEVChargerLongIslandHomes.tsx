@@ -9,9 +9,9 @@ const BestEVChargerLongIslandHomes = () => {
   return (
     <>
       <SEOHead 
-        title="Best EV Charger for Long Island Homes | 2025 Buyer's Guide"
-        description="Looking to install an EV charger at home on Long Island? Compare Tesla, ChargePoint, and JuiceBox. Expert tips from licensed installers."
-        keywords="best EV charger Long Island, home EV charger installation, Tesla Wall Connector, ChargePoint, JuiceBox"
+        title="Best EV Charger for Suffolk County Homes | 2025 Buyer's Guide"
+        description="Looking to install an EV charger at home in Suffolk County? Compare Tesla, ChargePoint, and JuiceBox. Expert tips from licensed installers."
+        keywords="best EV charger Suffolk County, home EV charger installation, Tesla Wall Connector, ChargePoint, JuiceBox"
       />
       
       <article className="min-h-screen bg-background">
@@ -26,10 +26,10 @@ const BestEVChargerLongIslandHomes = () => {
             <div className="max-w-4xl">
               <Badge className="bg-white/10 text-white mb-4">Home Charging</Badge>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Best EV Charger for Long Island Homes | 2025 Buyer's Guide
+                Best EV Charger for Suffolk County Homes | 2025 Buyer's Guide
               </h1>
               <p className="text-xl text-white/90 mb-6">
-                Looking to install an EV charger at home on Long Island? Compare Tesla, ChargePoint, and JuiceBox. Expert tips from licensed installers.
+                Looking to install an EV charger at home in Suffolk County? Compare Tesla, ChargePoint, and JuiceBox. Expert tips from licensed installers.
               </p>
               <div className="flex items-center space-x-4 text-sm text-white/80">
                 <span>January 15, 2024</span>

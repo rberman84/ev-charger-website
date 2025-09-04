@@ -46,17 +46,17 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>EV Charger Installation Services Long Island | Tesla & Level 2 Charging</title>
-        <meta name="description" content="Professional EV charger installation services on Long Island. Tesla Wall Connectors, Level 2 home charging, commercial stations & panel upgrades. Licensed electricians." />
-        <meta property="og:title" content="EV Charger Installation Services Long Island | Tesla & Level 2 Charging" />
-        <meta property="og:description" content="Professional EV charger installation services on Long Island. Tesla Wall Connectors, Level 2 home charging, commercial stations & panel upgrades. Licensed electricians." />
+        <title>EV Charger Installation Services Suffolk County | Tesla & Level 2 Charging</title>
+        <meta name="description" content="Professional EV charger installation services in Suffolk County. Tesla Wall Connectors, Level 2 home charging, commercial stations & panel upgrades. Licensed electricians." />
+        <meta property="og:title" content="EV Charger Installation Services Suffolk County | Tesla & Level 2 Charging" />
+        <meta property="og:description" content="Professional EV charger installation services in Suffolk County. Tesla Wall Connectors, Level 2 home charging, commercial stations & panel upgrades. Licensed electricians." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "EV Charger Installation",
-            "name": "EV Charger Installation Services Long Island",
-            "description": "Professional installation of EV charging stations for homes and businesses across Long Island",
+            "name": "EV Charger Installation Services Suffolk County",
+            "description": "Professional installation of EV charging stations for homes and businesses across Suffolk County",
             "provider": {"@type": "LocalBusiness", "name": "EV Charger Installation Suffolk"},
             "areaServed": [
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
@@ -86,7 +86,7 @@ const Services = () => {
                 <span className="block text-electric-green">Services</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-silver-light">
-                Licensed electricians providing professional EV charging solutions across Long Island
+                Licensed electricians providing professional EV charging solutions across Suffolk County
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center space-x-2 text-electric-green">

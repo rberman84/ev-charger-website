@@ -36,7 +36,7 @@ const ServiceAreas = () => {
   return (
     <>
       <Helmet>
-        <title>Service Areas Long Island | EV Charger Installation Coverage</title>
+        <title>Service Areas Suffolk County | EV Charger Installation Coverage</title>
         <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
         <meta property="og:title" content="Service Areas Suffolk County | EV Charger Installation Coverage" />
         <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
@@ -66,10 +66,10 @@ const ServiceAreas = () => {
             <div className="max-w-4xl mx-auto text-center text-white">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 Service Areas
-                <span className="block text-electric-green">Across Long Island</span>
+                <span className="block text-electric-green">Across Suffolk County</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-silver-light">
-                Professional EV charger installation throughout Suffolk County on Long Island.
+                Professional EV charger installation throughout Suffolk County.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center space-x-2 text-electric-green">
@@ -131,7 +131,7 @@ const ServiceAreas = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-navy-deep mb-6">
-                Complete Long Island Coverage
+                Complete Suffolk County Coverage
               </h2>
               <p className="text-lg text-silver mb-8">
                  While we specialize in the areas listed above, our licensed electricians 

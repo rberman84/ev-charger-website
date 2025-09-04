@@ -8,24 +8,24 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const blogPosts = [
     {
-      title: "Best EV Charger for Long Island Homes | 2025 Buyer's Guide",
-      excerpt: "Looking to install an EV charger at home on Long Island? Compare Tesla, ChargePoint, and JuiceBox. Expert tips from licensed installers.",
+      title: "Best EV Charger for Suffolk County Homes | 2025 Buyer's Guide",
+      excerpt: "Looking to install an EV charger at home in Suffolk County? Compare Tesla, ChargePoint, and JuiceBox. Expert tips from licensed installers.",
       category: "Home Charging",
       date: "2024-01-15",
       readTime: "5 min read",
       slug: "best-ev-charger-long-island-homes"
     },
     {
-      title: "EV Charger Installation Costs Long Island | What to Expect in 2025",
-      excerpt: "How much does it cost to install an EV charger on Long Island? Learn price ranges, panel upgrade costs, and what impacts installation.",
+      title: "EV Charger Installation Costs Suffolk County | What to Expect in 2025",
+      excerpt: "How much does it cost to install an EV charger in Suffolk County? Learn price ranges, panel upgrade costs, and what impacts installation.",
       category: "Cost Guide",
       date: "2024-01-10",
       readTime: "7 min read",
       slug: "ev-charger-installation-costs-suffolk-county"
     },
     {
-      title: "How to Prepare Your Long Island Home for EV Charger Installation",
-      excerpt: "Planning an EV charger installation? Learn how to prep your panel, garage, and wiring. Licensed Long Island electricians explain step by step.",
+      title: "How to Prepare Your Suffolk County Home for EV Charger Installation",
+      excerpt: "Planning an EV charger installation? Learn how to prep your panel, garage, and wiring. Licensed Suffolk County electricians explain step by step.",
       category: "Installation Guide",
       date: "2024-01-05",
       readTime: "6 min read",
@@ -33,7 +33,7 @@ const Blog = () => {
     },
     {
       title: "Tesla Wall Connector vs. Universal EV Chargers",
-      excerpt: "Detailed comparison between Tesla Wall Connector and universal Level 2 chargers for Long Island homeowners.",
+      excerpt: "Detailed comparison between Tesla Wall Connector and universal Level 2 chargers for Suffolk County homeowners.",
       category: "Product Comparison",
       date: "2023-12-28",
       readTime: "8 min read",
@@ -49,7 +49,7 @@ const Blog = () => {
     },
     {
       title: "Commercial EV Charging Station Benefits",
-      excerpt: "Why Long Island businesses should install EV charging stations and how they benefit customers, employees, and the bottom line.",
+      excerpt: "Why Suffolk County businesses should install EV charging stations and how they benefit customers, employees, and the bottom line.",
       category: "Commercial",
       date: "2023-12-15",
       readTime: "6 min read",
@@ -60,15 +60,15 @@ const Blog = () => {
   return (
     <>
       <SEOHead 
-        title="EV Charger Installation Blog | Long Island Electric Vehicle Charging Tips & Guides"
-        description="Expert insights on EV charger installation, costs, permits, and best practices for Long Island homeowners and businesses. Latest EV charging news and guides."
-        keywords="EV charger installation blog, electric vehicle charging tips Long Island, EV charger costs, Tesla charger guides, home charging station advice"
+        title="EV Charger Installation Blog | Suffolk County Electric Vehicle Charging Tips & Guides"
+        description="Expert insights on EV charger installation, costs, permits, and best practices for Suffolk County homeowners and businesses. Latest EV charging news and guides."
+        keywords="EV charger installation blog, electric vehicle charging tips Suffolk County, EV charger costs, Tesla charger guides, home charging station advice"
         schemaData={[
           {
             "@context": "https://schema.org",
             "@type": "Blog",
             "name": "EV Charger Installation Suffolk Blog",
-            "description": "Expert insights on EV charger installation, costs, permits, and best practices for Long Island homeowners and businesses.",
+            "description": "Expert insights on EV charger installation, costs, permits, and best practices for Suffolk County homeowners and businesses.",
             "url": "https://powerupevli.com/blog",
             "publisher": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"}
           },
@@ -91,7 +91,7 @@ const Blog = () => {
               EV Charging <span className="text-electric-green">Knowledge Hub</span>
             </h1>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Expert insights, installation guides, and the latest news on EV charger installation throughout Long Island. 
+              Expert insights, installation guides, and the latest news on EV charger installation throughout Suffolk County. 
               Stay informed with tips from our certified electricians.
             </p>
           </div>
@@ -145,7 +145,7 @@ const Blog = () => {
               </h3>
               <p className="text-silver mb-6 max-w-2xl mx-auto">
                 Get the latest tips, guides, and news on EV charger installation delivered to your inbox. 
-                Plus exclusive discounts for Long Island homeowners.
+                Plus exclusive discounts for Suffolk County homeowners.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input 

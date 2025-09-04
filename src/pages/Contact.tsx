@@ -11,7 +11,7 @@ const Contact = () => {
       <SEOHead 
         title="Contact EV Charger Installation Suffolk | Free Estimates"
         description="Contact EV Charger Installation Suffolk for professional EV charger installation throughout Suffolk County. Free estimates, same-day service. Call (516) 361-4068 or request a quote online."
-        keywords="contact EV charger installer Long Island, EV charger installation quote, Tesla charger installation estimate, Nassau Suffolk County electrician"
+        keywords="contact EV charger installer Suffolk County, EV charger installation quote, Tesla charger installation estimate, Nassau Suffolk County electrician"
         schemaData={[
           {
             "@context": "https://schema.org",

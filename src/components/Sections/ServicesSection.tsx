@@ -51,7 +51,7 @@ const ServicesSection = () => {
           </h2>
           <p className="text-lg text-silver max-w-3xl mx-auto">
             From Tesla Wall Connectors to commercial charging stations, we provide complete 
-            EV charging solutions throughout Long Island with professional installation and ongoing support.
+            EV charging solutions throughout Suffolk County with professional installation and ongoing support.
           </p>
         </div>
 
