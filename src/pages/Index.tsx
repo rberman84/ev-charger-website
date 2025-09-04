@@ -16,7 +16,7 @@ const Index = () => {
     "@id": "https://powerupevli.com#company",
     "name": "PowerUp EV Long Island",
     "url": "https://powerupevli.com",
-    "telephone": "(631) 555-0100",
+    "telephone": "(516) 361-4068",
     "logo": "https://powerupevli.com/logo.png",
     "image": "https://powerupevli.com/og-image-ev-charger.jpg",
     "priceRange": "$$",
@@ -403,14 +403,14 @@ const Index = () => {
                 Get Free Estimate Now
               </Button>
             </Link>
-            <Link to="tel:(631) 555-0100">
+            <Link to="tel:(516) 361-4068">
               <Button 
                 variant="outline" 
                 size="lg" 
                 className="border-electric-green text-electric-green bg-electric-green/10 hover:bg-electric-green hover:text-navy-deep transition-all duration-300 text-lg px-8 py-4 font-semibold"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                (631) 555-0100
+                (516) 361-4068
               </Button>
             </Link>
           </div>

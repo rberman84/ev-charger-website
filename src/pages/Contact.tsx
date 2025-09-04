@@ -10,7 +10,7 @@ const Contact = () => {
     <>
       <SEOHead 
         title="Contact PowerUp EV | EV Charger Installation Long Island | Free Estimates"
-        description="Contact PowerUp EV for professional EV charger installation throughout Long Island. Free estimates, same-day service. Call (631) 555-0100 or request a quote online."
+        description="Contact PowerUp EV for professional EV charger installation throughout Long Island. Free estimates, same-day service. Call (516) 361-4068 or request a quote online."
         keywords="contact EV charger installer Long Island, EV charger installation quote, Tesla charger installation estimate, Nassau Suffolk County electrician"
         schemaData={[
           {
@@ -84,7 +84,7 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-navy-deep mb-2">
                       Phone Number *
                     </label>
-                    <Input placeholder="(631) 555-0123" className="w-full" />
+                    <Input placeholder="(516) 361-4068" className="w-full" />
                   </div>
 
                   <div>
@@ -138,7 +138,7 @@ const Contact = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold mb-2">(631) 555-0100</div>
+                    <div className="text-2xl font-bold mb-2">(516) 361-4068</div>
                     <p className="text-white/90">
                       Speak directly with our EV installation experts. Same-day consultations available.
                     </p>

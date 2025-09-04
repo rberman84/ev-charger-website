@@ -117,7 +117,7 @@ const Privacy = () => {
                   <div className="bg-muted/30 p-6 rounded-lg">
                     <div className="flex items-center space-x-2 text-electric-green mb-2">
                       <Phone className="w-4 h-4" />
-                      <span className="font-semibold">(631) 555-0100</span>
+                      <span className="font-semibold">(516) 361-4068</span>
                     </div>
                     <p>Email: info@powerupevli.com</p>
                     <p>Address: Serving Nassau & Suffolk Counties, Long Island, NY</p>

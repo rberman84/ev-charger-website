@@ -74,7 +74,7 @@ const ServiceAreas = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center space-x-2 text-electric-green">
                   <Phone className="w-5 h-5" />
-                  <span className="font-semibold text-lg">(631) 555-0100</span>
+                  <span className="font-semibold text-lg">(516) 361-4068</span>
                 </div>
                 <Button size="lg" className="bg-gradient-accent hover:scale-105 transition-all duration-300 shadow-glow">
                   Get Free Estimate
@@ -140,7 +140,7 @@ const ServiceAreas = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center space-x-2 text-electric-green">
                   <Phone className="w-5 h-5" />
-                  <span className="font-semibold text-lg">(631) 555-0100</span>
+                  <span className="font-semibold text-lg">(516) 361-4068</span>
                 </div>
                 <Button className="bg-gradient-primary hover:scale-105 transition-all duration-300">
                   Check Your Area

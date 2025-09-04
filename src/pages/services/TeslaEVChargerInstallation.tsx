@@ -147,7 +147,7 @@ const TeslaEVChargerInstallation = () => {
               </Button>
               <Button variant="outline" size="lg" className="border-electric-green text-electric-green bg-electric-green/10 hover:bg-electric-green hover:text-navy-deep transition-all duration-300 font-semibold">
                 <Phone className="w-5 h-5 mr-2" />
-                (631) 555-0100
+                (516) 361-4068
               </Button>
             </div>
           </div>
@@ -381,7 +381,7 @@ const TeslaEVChargerInstallation = () => {
               className="border-electric-green text-electric-green bg-electric-green/10 hover:bg-electric-green hover:text-navy-deep transition-all duration-300 text-lg px-8 py-4 font-semibold"
             >
               <Phone className="w-5 h-5 mr-2" />
-              (631) 555-0100
+              (516) 361-4068
             </Button>
           </div>
         </div>
