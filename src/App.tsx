@@ -29,6 +29,8 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import ServiceAreas from "./pages/ServiceAreas";
 import Services from "./pages/Services";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 // Blog Posts
 import BestEVChargerLongIslandHomes from "./pages/blog/BestEVChargerLongIslandHomes";
@@ -70,6 +72,8 @@ const App = () => (
               <Route path="/service-areas" element={<ServiceAreas />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
               
               {/* Blog Posts */}
               <Route path="/blog/best-ev-charger-long-island-homes" element={<BestEVChargerLongIslandHomes />} />
