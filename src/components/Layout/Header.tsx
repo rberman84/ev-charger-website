@@ -27,7 +27,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/b0761ce9-1039-4524-bc32-b6196a74d81f.png" 
                 alt="EV Charger Installation Suffolk Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
 
