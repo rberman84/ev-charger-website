@@ -124,22 +124,24 @@ const TeslaEVChargerInstallation = () => {
         
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl">
-            <Badge className="bg-white/10 text-white mb-4">
-              <Zap className="w-4 h-4 mr-2" />
-              Certified Tesla Installer
-            </Badge>
-            
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Tesla EV Charger Installation{" "}
-              <span className="text-electric-green">Long Island</span>
-            </h1>
-            
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Get the fastest, most reliable Tesla charging experience with professional Tesla Wall Connector 
-              installation throughout Nassau and Suffolk Counties. Certified Tesla installers with same-day service.
-            </p>
+            <div className="border-2 border-electric-green/30 rounded-xl p-8 bg-white/10 backdrop-blur-sm shadow-elegant">
+              <Badge className="bg-white/10 text-white mb-4">
+                <Zap className="w-4 h-4 mr-2" />
+                Certified Tesla Installer
+              </Badge>
+              
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                Tesla EV Charger Installation{" "}
+                <span className="text-electric-green">Long Island</span>
+              </h1>
+              
+              <p className="text-xl text-white/90 mb-8 leading-relaxed">
+                Get the fastest, most reliable Tesla charging experience with professional Tesla Wall Connector 
+                installation throughout Nassau and Suffolk Counties. Certified Tesla installers with same-day service.
+              </p>
+            </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button size="lg" className="bg-white text-navy-deep hover:bg-white/90 hover:scale-105 transition-all duration-300">
                 Get Tesla Charger Quote
               </Button>
