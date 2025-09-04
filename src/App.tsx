@@ -30,6 +30,14 @@ import Contact from "./pages/Contact";
 import ServiceAreas from "./pages/ServiceAreas";
 import Services from "./pages/Services";
 
+// Blog Posts
+import BestEVChargerLongIslandHomes from "./pages/blog/BestEVChargerLongIslandHomes";
+import EVChargerInstallationCosts from "./pages/blog/EVChargerInstallationCosts";
+import PrepareHomeEVChargerInstallation from "./pages/blog/PrepareHomeEVChargerInstallation";
+import TeslaWallConnectorVsUniversal from "./pages/blog/TeslaWallConnectorVsUniversal";
+import NassauCountyEVChargerPermits from "./pages/blog/NassauCountyEVChargerPermits";
+import CommercialEVChargingBenefits from "./pages/blog/CommercialEVChargingBenefits";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -62,6 +70,14 @@ const App = () => (
               <Route path="/service-areas" element={<ServiceAreas />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
+              
+              {/* Blog Posts */}
+              <Route path="/blog/best-ev-charger-long-island-homes" element={<BestEVChargerLongIslandHomes />} />
+              <Route path="/blog/ev-charger-installation-costs-suffolk-county" element={<EVChargerInstallationCosts />} />
+              <Route path="/blog/prepare-home-ev-charger-installation" element={<PrepareHomeEVChargerInstallation />} />
+              <Route path="/blog/tesla-wall-connector-vs-universal-chargers" element={<TeslaWallConnectorVsUniversal />} />
+              <Route path="/blog/nassau-county-ev-charger-permits" element={<NassauCountyEVChargerPermits />} />
+              <Route path="/blog/commercial-ev-charging-station-benefits" element={<CommercialEVChargingBenefits />} />
               
               {/* Catch-all route */}
               <Route path="*" element={<NotFound />} />
