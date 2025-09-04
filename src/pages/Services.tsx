@@ -57,7 +57,7 @@ const Services = () => {
             "serviceType": "EV Charger Installation",
             "name": "EV Charger Installation Services Long Island",
             "description": "Professional installation of EV charging stations for homes and businesses across Long Island",
-            "provider": {"@type": "LocalBusiness", "name": "PowerUp EV Long Island"},
+            "provider": {"@type": "LocalBusiness", "name": "EV Charger Installation Suffolk"},
             "areaServed": [
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
@@ -161,7 +161,7 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-navy-deep mb-6">
-                Why Choose PowerUp EV?
+                Why Choose EV Charger Installation Suffolk?
               </h2>
               <div className="grid md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">

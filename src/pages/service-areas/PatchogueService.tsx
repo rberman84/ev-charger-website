@@ -64,7 +64,7 @@ const PatchogueService = () => {
               Reliable EV Charging Solutions for Patchogue Residents
             </h2>
             <p className="text-lg text-silver max-w-4xl mx-auto leading-relaxed">
-              PowerUp EV provides comprehensive EV charger installation services throughout Patchogue and the greater Suffolk County area. 
+              EV Charger Installation Suffolk provides comprehensive EV charger installation services throughout Patchogue and the greater Suffolk County area. 
               Our certified electricians specialize in Tesla Wall Connectors, Level 2 home charging stations, and commercial charging infrastructure.
             </p>
             <div className="mt-8">

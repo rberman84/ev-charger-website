@@ -7,8 +7,8 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | PowerUp EV Long Island</title>
-        <meta name="description" content="Privacy Policy for PowerUp EV Long Island. Learn how we collect, use, and protect your personal information when you use our EV charger installation services." />
+        <title>Privacy Policy | EV Charger Installation Suffolk</title>
+        <meta name="description" content="Privacy Policy for EV Charger Installation Suffolk. Learn how we collect, use, and protect your personal information when you use our EV charger installation services." />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -39,7 +39,7 @@ const Privacy = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-navy-deep mb-4">Information We Collect</h2>
                   <p className="mb-4">
-                    When you contact PowerUp EV Long Island for EV charger installation services, we may collect the following information:
+                    When you contact EV Charger Installation Suffolk for EV charger installation services, we may collect the following information:
                   </p>
                   <ul className="list-disc list-inside space-y-2 mb-4">
                     <li>Personal information (name, email address, phone number)</li>
@@ -119,8 +119,8 @@ const Privacy = () => {
                       <Phone className="w-4 h-4" />
                       <span className="font-semibold">(516) 361-4068</span>
                     </div>
-                    <p>Email: info@powerupevli.com</p>
-                    <p>Address: Serving Nassau & Suffolk Counties, Long Island, NY</p>
+                    <p>Email: info@evchargersuffolk.com</p>
+                    <p>Address: Serving Suffolk County, NY</p>
                   </div>
                 </div>
               </div>

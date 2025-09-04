@@ -67,7 +67,7 @@ const Blog = () => {
           {
             "@context": "https://schema.org",
             "@type": "Blog",
-            "name": "PowerUp EV Long Island Blog",
+            "name": "EV Charger Installation Suffolk Blog",
             "description": "Expert insights on EV charger installation, costs, permits, and best practices for Long Island homeowners and businesses.",
             "url": "https://powerupevli.com/blog",
             "publisher": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"}

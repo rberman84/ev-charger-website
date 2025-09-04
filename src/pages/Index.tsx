@@ -14,8 +14,8 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "Electrician",
     "@id": "https://powerupevli.com#company",
-    "name": "PowerUp EV Long Island",
-    "url": "https://powerupevli.com",
+    "name": "EV Charger Installation Suffolk",
+    "url": "https://evchargersuffolk.com",
     "telephone": "(516) 361-4068",
     "logo": "https://powerupevli.com/logo.png",
     "image": "https://powerupevli.com/og-image-ev-charger.jpg",
@@ -59,7 +59,7 @@ const Index = () => {
         "@type": "Review",
         "author": {"@type": "Person", "name": "Michael Rodriguez"},
         "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-        "reviewBody": "PowerUp EV installed my Tesla Wall Connector perfectly. Professional work, clean installation, and they handled all the permits. Highly recommend!",
+        "reviewBody": "EV Charger Installation Suffolk installed my Tesla Wall Connector perfectly. Professional work, clean installation, and they handled all the permits. Highly recommend!",
         "datePublished": "2024-01-15"
       },
       {
@@ -81,8 +81,8 @@ const Index = () => {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://powerupevli.com",
-    "name": "PowerUp EV Long Island",
+    "url": "https://evchargersuffolk.com",
+    "name": "EV Charger Installation Suffolk",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://powerupevli.com/search?q={query}",
@@ -144,7 +144,7 @@ const Index = () => {
       name: "Michael Rodriguez",
       location: "Huntington, NY",
       rating: 5,
-      text: "PowerUp EV installed my Tesla Wall Connector perfectly. Professional work, clean installation, and they handled all the permits. Highly recommend!"
+      text: "EV Charger Installation Suffolk installed my Tesla Wall Connector perfectly. Professional work, clean installation, and they handled all the permits. Highly recommend!"
     },
     {
       name: "Sarah Chen",
@@ -201,11 +201,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-deep mb-4">
-              Why Choose PowerUp EV for Long Island EV Charger Installation?
+              Why Choose EV Charger Installation Suffolk for Suffolk County EV Charger Installation?
             </h2>
             <p className="text-lg text-silver max-w-3xl mx-auto">
-              As Long Island's premier EV charger installation specialists, we combine technical expertise 
-              with exceptional customer service to deliver reliable charging solutions for your home or business.
+               As Suffolk County's premier EV charger installation specialists, we combine technical expertise 
+               with exceptional customer service to deliver reliable charging solutions for your home or business.
             </p>
           </div>
 
@@ -246,9 +246,9 @@ const Index = () => {
                 <CardTitle className="text-navy-deep">500+ Happy Customers</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-silver text-sm">
-                  Trusted by homeowners throughout Nassau and Suffolk Counties with 4.9-star ratings.
-                </p>
+                 <p className="text-silver text-sm">
+                   Trusted by homeowners throughout Suffolk County with 4.9-star ratings.
+                 </p>
               </CardContent>
             </Card>
 
@@ -279,7 +279,7 @@ const Index = () => {
               EV Charger Installation Service Areas
             </h2>
             <p className="text-lg text-silver max-w-3xl mx-auto">
-              We provide professional EV charger installation throughout Nassau and Suffolk Counties on Long Island. 
+              We provide professional EV charger installation throughout Suffolk County on Long Island. 
               Our certified electricians serve residential and commercial customers across all major communities.
             </p>
           </div>
@@ -354,7 +354,7 @@ const Index = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-silver max-w-3xl mx-auto">
-              Get answers to common questions about EV charger installation on Long Island.
+              Get answers to common questions about EV charger installation in Suffolk County.
             </p>
           </div>
 
@@ -391,7 +391,7 @@ const Index = () => {
             Ready to Install Your EV Charger?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-white/90">
-            Join 500+ satisfied Long Island homeowners who trust PowerUp EV for professional 
+            Join 500+ satisfied Suffolk County homeowners who trust EV Charger Installation Suffolk for professional 
             EV charger installation. Get your free estimate today and start charging at home tomorrow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

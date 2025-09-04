@@ -7,8 +7,8 @@ const Terms = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | PowerUp EV Long Island</title>
-        <meta name="description" content="Terms of Service for PowerUp EV Long Island. Read our terms and conditions for EV charger installation services across Nassau and Suffolk County." />
+        <title>Terms of Service | EV Charger Installation Suffolk</title>
+        <meta name="description" content="Terms of Service for EV Charger Installation Suffolk. Read our terms and conditions for EV charger installation services across Suffolk County." />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -39,14 +39,14 @@ const Terms = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-navy-deep mb-4">Acceptance of Terms</h2>
                   <p className="mb-4">
-                    By using PowerUp EV Long Island's services, you agree to these Terms of Service. 
+                    By using EV Charger Installation Suffolk's services, you agree to these Terms of Service. 
                     If you do not agree to these terms, please do not use our services.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-bold text-navy-deep mb-4">Services Provided</h2>
-                  <p className="mb-4">PowerUp EV Long Island provides:</p>
+                  <p className="mb-4">EV Charger Installation Suffolk provides:</p>
                   <ul className="list-disc list-inside space-y-2 mb-4">
                     <li>EV charger installation (Tesla, Level 2 home chargers, commercial stations)</li>
                     <li>Electrical panel upgrades and modifications</li>
@@ -59,8 +59,8 @@ const Terms = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-navy-deep mb-4">Service Area</h2>
                   <p className="mb-4">
-                    Our services are available throughout Nassau and Suffolk Counties on Long Island, New York. 
-                    Service availability may vary by location and project requirements.
+                Our services are available throughout Suffolk County. 
+                Service availability may vary by location and project requirements.
                   </p>
                 </div>
 
@@ -101,7 +101,7 @@ const Terms = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-navy-deep mb-4">Limitation of Liability</h2>
                   <p className="mb-4">
-                    PowerUp EV Long Island's liability is limited to the cost of services provided. 
+                    EV Charger Installation Suffolk's liability is limited to the cost of services provided. 
                     We are not responsible for indirect, consequential, or incidental damages. 
                     Our work is fully insured and meets all applicable codes and standards.
                   </p>
@@ -152,8 +152,8 @@ const Terms = () => {
                       <Phone className="w-4 h-4" />
                       <span className="font-semibold">(516) 361-4068</span>
                     </div>
-                    <p>Email: info@powerupevli.com</p>
-                    <p>Address: Serving Nassau & Suffolk Counties, Long Island, NY</p>
+                    <p>Email: info@evchargersuffolk.com</p>
+                    <p>Address: Serving Suffolk County, NY</p>
                     <p>Licensed & Insured New York State Electrical Contractors</p>
                   </div>
                 </div>

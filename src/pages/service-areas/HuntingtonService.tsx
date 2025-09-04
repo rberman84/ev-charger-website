@@ -64,7 +64,7 @@ const HuntingtonService = () => {
               Expert EV Charging Solutions for Huntington
             </h2>
             <p className="text-lg text-silver max-w-4xl mx-auto leading-relaxed">
-              PowerUp EV proudly serves Huntington residents with comprehensive EV charger installation services. 
+              EV Charger Installation Suffolk proudly serves Huntington residents with comprehensive EV charger installation services. 
               Our Tesla-certified electricians provide professional installation of Wall Connectors, Level 2 home chargers, and complete electrical upgrades.
             </p>
             <div className="mt-8">

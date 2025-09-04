@@ -9,15 +9,15 @@ const Contact = () => {
   return (
     <>
       <SEOHead 
-        title="Contact PowerUp EV | EV Charger Installation Long Island | Free Estimates"
-        description="Contact PowerUp EV for professional EV charger installation throughout Long Island. Free estimates, same-day service. Call (516) 361-4068 or request a quote online."
+        title="Contact EV Charger Installation Suffolk | Free Estimates"
+        description="Contact EV Charger Installation Suffolk for professional EV charger installation throughout Suffolk County. Free estimates, same-day service. Call (516) 361-4068 or request a quote online."
         keywords="contact EV charger installer Long Island, EV charger installation quote, Tesla charger installation estimate, Nassau Suffolk County electrician"
         schemaData={[
           {
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Contact PowerUp EV Long Island",
-            "description": "Contact PowerUp EV for professional EV charger installation throughout Long Island.",
+            "name": "Contact EV Charger Installation Suffolk",
+            "description": "Contact EV Charger Installation Suffolk for professional EV charger installation throughout Suffolk County.",
             "url": "https://powerupevli.com/contact",
             "mainEntity": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"}
           },
@@ -38,7 +38,7 @@ const Contact = () => {
           <div className="container mx-auto px-4 text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Zap className="w-8 h-8 text-electric-green" />
-              <span className="text-lg">PowerUp EV Long Island</span>
+              <span className="text-lg">EV Charger Installation Suffolk</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Get Your Free <span className="text-electric-green">EV Charger</span> Estimate
@@ -154,7 +154,7 @@ const Contact = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-silver">info@powerupevli.com</p>
+                      <p className="text-silver">info@evchargersuffolk.com</p>
                       <p className="text-sm text-silver mt-2">
                         We respond to all emails within 4 hours
                       </p>
@@ -169,9 +169,9 @@ const Contact = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-silver">Nassau & Suffolk Counties</p>
+                      <p className="text-silver">Suffolk County</p>
                       <p className="text-sm text-silver mt-2">
-                        All of Long Island, NY
+                        All of Suffolk County, NY
                       </p>
                     </CardContent>
                   </Card>
@@ -209,7 +209,7 @@ const Contact = () => {
 
                 <Card className="bg-muted/30">
                   <CardContent className="pt-6">
-                    <h3 className="font-bold text-navy-deep mb-3">Why Choose PowerUp EV?</h3>
+                    <h3 className="font-bold text-navy-deep mb-3">Why Choose EV Charger Installation Suffolk?</h3>
                     <ul className="space-y-2 text-sm text-silver">
                       <li>✓ Licensed & insured electricians</li>
                       <li>✓ Tesla certified installers</li>

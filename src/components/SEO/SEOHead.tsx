@@ -10,8 +10,8 @@ interface SEOHeadProps {
 }
 
 const SEOHead = ({
-  title = "EV Charger Installation Long Island | PowerUp EV - #1 Tesla & Home Charging Experts",
-  description = "Professional EV charger installation throughout Long Island. Licensed experts in Tesla, home & commercial EV charging stations. Serving Nassau & Suffolk Counties. Free estimates!",
+  title = "EV Charger Installation Suffolk | Licensed Local Experts",
+  description = "Professional EV charger installation throughout Suffolk County. Licensed experts in Tesla, home & commercial EV charging stations. Serving all Suffolk County. Free estimates!",
   keywords = "EV charger installation Long Island, Tesla charger installation, home EV charging station, electric vehicle charger Nassau County, Suffolk County EV installation",
   canonicalUrl,
   ogImage = "/og-image.jpg",
@@ -25,7 +25,7 @@ const SEOHead = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="author" content="PowerUp EV Long Island" />
+      <meta name="author" content="EV Charger Installation Suffolk" />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
@@ -38,7 +38,7 @@ const SEOHead = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="PowerUp EV Long Island" />
+      <meta property="og:site_name" content="EV Charger Installation Suffolk" />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -49,9 +49,9 @@ const SEOHead = ({
       
       {/* Local Business Information */}
       <meta name="geo.region" content="US-NY" />
-      <meta name="geo.placename" content="Long Island" />
-      <meta name="geo.position" content="40.7891;-73.1350" />
-      <meta name="ICBM" content="40.7891, -73.1350" />
+      <meta name="geo.placename" content="Suffolk County" />
+      <meta name="geo.position" content="40.8176;-73.0417" />
+      <meta name="ICBM" content="40.8176, -73.0417" />
       
       {/* Schema.org structured data */}
       {schemaData && (

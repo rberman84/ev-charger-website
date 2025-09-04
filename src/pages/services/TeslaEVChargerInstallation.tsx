@@ -327,7 +327,7 @@ const TeslaEVChargerInstallation = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-silver italic">
-                  "PowerUp EV installed my Tesla Wall Connector perfectly. The charging speed is incredible - 
+                  "EV Charger Installation Suffolk installed my Tesla Wall Connector perfectly. The charging speed is incredible - 
                   I get a full charge overnight. Professional installation and they handled all the permits. 
                   Highly recommend for Tesla owners!"
                 </p>
@@ -365,7 +365,7 @@ const TeslaEVChargerInstallation = () => {
             Ready to Install Your Tesla Wall Connector?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-white/90">
-            Join hundreds of satisfied Tesla owners on Long Island who chose PowerUp EV for their 
+            Join hundreds of satisfied Tesla owners in Suffolk County who chose EV Charger Installation Suffolk for their 
             Tesla Wall Connector installation. Get faster charging and ultimate convenience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

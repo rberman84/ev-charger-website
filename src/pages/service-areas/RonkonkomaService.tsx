@@ -67,7 +67,7 @@ const RonkonkomaService = () => {
               
               <div className="prose prose-lg max-w-none text-silver leading-relaxed">
                 <p className="mb-6">
-                  PowerUp EV is proud to serve Ronkonkoma residents with professional EV charger installation services. 
+                  EV Charger Installation Suffolk is proud to serve Ronkonkoma residents with professional EV charger installation services. 
                   As Suffolk County's leading EV charging specialists, we provide complete installation solutions for 
                   Tesla Wall Connectors, Level 2 home charging stations, and commercial charging infrastructure.
                 </p>
@@ -98,7 +98,7 @@ const RonkonkomaService = () => {
                 </p>
 
                 <h3 className="text-2xl font-bold text-navy-deep mb-4">
-                  Why Choose PowerUp EV in Ronkonkoma?
+                  Why Choose EV Charger Installation Suffolk in Ronkonkoma?
                 </h3>
 
                 <ul className="list-disc list-inside space-y-2 mb-6">
@@ -111,7 +111,7 @@ const RonkonkomaService = () => {
                 </ul>
 
                 <p className="mb-8">
-                  Ready to start charging your electric vehicle at home? Contact PowerUp EV today for your free 
+                  Ready to start charging your electric vehicle at home? Contact EV Charger Installation Suffolk today for your free 
                   consultation and estimate. We'll assess your property, recommend the best charging solution, 
                   and handle everything from permits to final inspection.
                 </p>

@@ -13,7 +13,7 @@ const Footer = () => {
                 <Zap className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h3 className="text-lg font-bold">PowerUp EV</h3>
+                <h3 className="text-lg font-bold">EV Charger Installation Suffolk</h3>
                 <p className="text-sm text-electric-green">Long Island's #1 EV Charger Experts</p>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-silver-light">
-          <p>&copy; 2024 PowerUp EV Long Island. All rights reserved.</p>
+          <p>&copy; 2024 EV Charger Installation Suffolk. All rights reserved.</p>
           <div className="mt-4 md:mt-0 space-x-6">
             <Link to="/privacy" className="hover:text-electric-green transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-electric-green transition-colors">Terms of Service</Link>

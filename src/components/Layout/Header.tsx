@@ -23,15 +23,15 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <Zap className="w-6 h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold text-navy-deep">PowerUp EV</span>
-              <span className="text-xs text-silver uppercase tracking-wide">Long Island</span>
-            </div>
-          </Link>
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="flex flex-col items-center">
+                <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center mb-1">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-xs font-bold text-navy-deep leading-tight">EV CHARGER</span>
+                <span className="text-xs font-bold text-electric-green leading-tight">SUFFOLK</span>
+              </div>
+            </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">

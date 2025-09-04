@@ -37,15 +37,15 @@ const ServiceAreas = () => {
     <>
       <Helmet>
         <title>Service Areas Long Island | EV Charger Installation Coverage</title>
-        <meta name="description" content="PowerUp EV serves Suffolk & Nassau County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
-        <meta property="og:title" content="Service Areas Long Island | EV Charger Installation Coverage" />
-        <meta property="og:description" content="PowerUp EV serves Suffolk & Nassau County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
+        <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
+        <meta property="og:title" content="Service Areas Suffolk County | EV Charger Installation Coverage" />
+        <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "PowerUp EV Long Island",
-            "description": "Professional EV charger installation serving Long Island",
+            "name": "EV Charger Installation Suffolk",
+            "description": "Professional EV charger installation serving Suffolk County",
             "areaServed": [
               {"@type": "Place", "name": "Ronkonkoma, NY"},
               {"@type": "Place", "name": "Patchogue, NY"},
@@ -69,7 +69,7 @@ const ServiceAreas = () => {
                 <span className="block text-electric-green">Across Long Island</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-silver-light">
-                Professional EV charger installation throughout Suffolk & Nassau County
+                Professional EV charger installation throughout Suffolk County on Long Island.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center space-x-2 text-electric-green">
@@ -92,8 +92,8 @@ const ServiceAreas = () => {
                 We Serve These Areas
               </h2>
               <p className="text-lg text-silver max-w-3xl mx-auto">
-                Our licensed electricians provide professional EV charger installation services 
-                throughout Long Island's most popular communities.
+                 Our licensed electricians provide professional EV charger installation services 
+                 throughout Suffolk County's most popular communities.
               </p>
             </div>
 
@@ -134,8 +134,8 @@ const ServiceAreas = () => {
                 Complete Long Island Coverage
               </h2>
               <p className="text-lg text-silver mb-8">
-                While we specialize in the areas listed above, our licensed electricians 
-                serve all of Suffolk and Nassau County. Don't see your town? Give us a call!
+                 While we specialize in the areas listed above, our licensed electricians 
+                 serve all of Suffolk County. Don't see your town? Give us a call!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center space-x-2 text-electric-green">
