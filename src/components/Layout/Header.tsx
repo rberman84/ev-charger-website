@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/923b1677-e6cf-4f4b-98f5-12617a51fe56.png" 
+                src="/lovable-uploads/b0761ce9-1039-4524-bc32-b6196a74d81f.png" 
                 alt="EV Charger Installation Suffolk Logo" 
                 className="h-12 w-auto"
               />
