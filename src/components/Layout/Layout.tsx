@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import SMSBar from "./SMSBar";
 import GlobalSchema from "@/components/SEO/GlobalSchema";
 
 interface LayoutProps {
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </main>
       <Footer />
+      <SMSBar />
     </div>
   );
 };
