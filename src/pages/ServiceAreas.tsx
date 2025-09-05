@@ -45,6 +45,11 @@ const ServiceAreas = () => {
       name: "Stony Brook",
       slug: "stony-brook", 
       description: "Licensed EV charger installation near Stony Brook University area"
+    },
+    {
+      name: "Riverhead",
+      slug: "riverhead",
+      description: "Fast, local EV charger installs across the East End"
     }
   ];
 
@@ -52,9 +57,9 @@ const ServiceAreas = () => {
     <>
       <Helmet>
         <title>Service Areas Suffolk County | EV Charger Installation Coverage</title>
-        <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip, Brookhaven & Stony Brook." />
+        <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip, Brookhaven, Stony Brook & Riverhead." />
         <meta property="og:title" content="Service Areas Suffolk County | EV Charger Installation Coverage" />
-        <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip, Brookhaven & Stony Brook." />
+        <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip, Brookhaven, Stony Brook & Riverhead." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -70,6 +75,7 @@ const ServiceAreas = () => {
               {"@type": "Place", "name": "Islip, NY"},
               {"@type": "Place", "name": "Brookhaven, NY"},
               {"@type": "Place", "name": "Stony Brook, NY"},
+              {"@type": "Place", "name": "Riverhead, NY"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
             ]
