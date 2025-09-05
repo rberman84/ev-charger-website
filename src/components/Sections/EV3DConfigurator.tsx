@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 import * as THREE from "three";
 
 // Define OrbitControls type since it's not in main three package
@@ -19,12 +20,15 @@ const EV3DConfigurator = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const [stats, setStats] = useState({ feet: 0, elbows: 0, cost: 0 });
+  const [showControls, setShowControls] = useState(false);
   const [config, setConfig] = useState({
     amps: 40,
     type: "EMT",
     ppf: 12,
     base: 450
   });
+  
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (!canvasRef.current || !wrapRef.current) return;
@@ -123,12 +127,19 @@ const EV3DConfigurator = () => {
 
     function fit() {
       const r = wrap.getBoundingClientRect();
-      W = Math.max(640, Math.floor(r.width));
-      H = Math.max(420, Math.floor(r.height));
+      W = Math.max(320, Math.floor(r.width));
+      H = Math.max(240, Math.floor(r.height));
       renderer.setSize(W, H, false);
       camera.aspect = W / H;
       camera.updateProjectionMatrix();
-      camera.position.set(10, 8, 18);
+      
+      // Adjust camera position based on screen size
+      if (W < 768) {
+        camera.position.set(12, 10, 22); // Further back on mobile
+      } else {
+        camera.position.set(10, 8, 18);
+      }
+      
       if (controls) controls.update();
     }
 
@@ -310,18 +321,67 @@ const EV3DConfigurator = () => {
       <div ref={wrapRef} className="relative w-full h-full">
         <canvas ref={canvasRef} className="w-full h-full" />
         
-        {/* UI Overlay */}
-        <div className="absolute top-3 left-3 max-w-80 p-3 bg-navy-deep/60 backdrop-blur-sm rounded-xl border border-white/10">
-          <h3 className="text-lg font-semibold mb-1">EV Charger Configurator</h3>
+        {/* Mobile floating controls toggle */}
+        {isMobile && (
+          <button
+            onClick={() => setShowControls(!showControls)}
+            className="absolute top-3 right-3 z-20 p-2 bg-navy-deep/80 backdrop-blur-sm rounded-lg border border-white/20 text-white hover:bg-navy-deep/90 transition-colors"
+            aria-label="Toggle controls"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+            </svg>
+          </button>
+        )}
+        
+        {/* UI Overlay - Responsive positioning */}
+        <div className={`absolute z-10 p-4 bg-navy-deep/80 backdrop-blur-md border border-white/10 transition-transform duration-300 ${
+          isMobile 
+            ? `left-0 right-0 bottom-0 rounded-t-xl ${showControls ? 'translate-y-0' : 'translate-y-full'}`
+            : 'top-3 left-3 max-w-80 rounded-xl'
+        }`}>
+          <div className="flex items-center justify-between mb-2">
+            <h3 className="text-lg font-semibold">EV Charger Configurator</h3>
+            {isMobile && (
+              <button
+                onClick={() => setShowControls(false)}
+                className="p-1 text-white/60 hover:text-white"
+                aria-label="Close controls"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+          
           <p className="text-sm text-white/70 mb-4">
-            Drag the charger on the wall. Scroll/drag background to look around.
+            {isMobile ? 'Tap charger to drag. Pinch to zoom.' : 'Drag the charger on the wall. Scroll/drag background to look around.'}
           </p>
           
-          <div className="space-y-3">
+          {/* Stats always visible */}
+          <div className="mb-4 p-3 bg-white/5 rounded-lg border border-white/10">
+            <div className="grid grid-cols-3 gap-2 font-mono text-sm">
+              <div className="text-center">
+                <div className="text-white/70 text-xs">Conduit</div>
+                <div className="font-semibold">{stats.feet} ft</div>
+              </div>
+              <div className="text-center">
+                <div className="text-white/70 text-xs">Elbows</div>
+                <div className="font-semibold">{stats.elbows}</div>
+              </div>
+              <div className="text-center">
+                <div className="text-white/70 text-xs">Cost</div>
+                <div className="font-semibold">${stats.cost.toLocaleString()}</div>
+              </div>
+            </div>
+          </div>
+          
+          <div className={`space-y-3 ${isMobile ? 'grid grid-cols-2 gap-3' : ''}`}>
             <div>
-              <label className="block text-sm mb-1">Amps</label>
+              <label className="block text-sm mb-2">Amps</label>
               <select 
-                className="w-full p-1 bg-navy-deep border border-white/20 rounded text-white"
+                className="w-full p-3 bg-navy-deep border border-white/20 rounded-lg text-white focus:border-electric-green focus:ring-1 focus:ring-electric-green"
                 value={config.amps}
                 onChange={(e) => updateConfig('amps', Number(e.target.value))}
               >
@@ -332,9 +392,9 @@ const EV3DConfigurator = () => {
             </div>
             
             <div>
-              <label className="block text-sm mb-1">Conduit</label>
+              <label className="block text-sm mb-2">Conduit</label>
               <select 
-                className="w-full p-1 bg-navy-deep border border-white/20 rounded text-white"
+                className="w-full p-3 bg-navy-deep border border-white/20 rounded-lg text-white focus:border-electric-green focus:ring-1 focus:ring-electric-green"
                 value={config.type}
                 onChange={(e) => updateConfig('type', e.target.value)}
               >
@@ -344,54 +404,56 @@ const EV3DConfigurator = () => {
             </div>
             
             <div>
-              <label className="block text-sm mb-1">$ / foot</label>
+              <label className="block text-sm mb-2">$ / foot</label>
               <input 
                 type="number"
                 min="1"
                 step="1"
-                className="w-full p-1 bg-navy-deep border border-white/20 rounded text-white"
+                className="w-full p-3 bg-navy-deep border border-white/20 rounded-lg text-white focus:border-electric-green focus:ring-1 focus:ring-electric-green"
                 value={config.ppf}
                 onChange={(e) => updateConfig('ppf', Number(e.target.value))}
               />
             </div>
             
             <div>
-              <label className="block text-sm mb-1">Base labor $</label>
+              <label className="block text-sm mb-2">Base labor $</label>
               <input 
                 type="number"
                 min="0"
                 step="25"
-                className="w-full p-1 bg-navy-deep border border-white/20 rounded text-white"
+                className="w-full p-3 bg-navy-deep border border-white/20 rounded-lg text-white focus:border-electric-green focus:ring-1 focus:ring-electric-green"
                 value={config.base}
                 onChange={(e) => updateConfig('base', Number(e.target.value))}
               />
             </div>
-            
-            <div className="pt-2 border-t border-white/15 space-y-1 font-mono text-sm">
-              <div>Conduit: <strong>{stats.feet} ft</strong></div>
-              <div>Elbows: <strong>{stats.elbows}</strong></div>
-              <div>Est. cost: <strong>${stats.cost.toLocaleString()}</strong></div>
-            </div>
-            
-            <div className="flex gap-2">
-              <Button 
-                onClick={handleExport}
-                className="flex-1 bg-electric-green text-navy-deep hover:bg-electric-green/90"
-                size="sm"
-              >
-                Export PNG
-              </Button>
-              <Button 
-                onClick={handleReset}
-                variant="outline"
-                className="flex-1 border-white/20 text-white hover:bg-white/10"
-                size="sm"
-              >
-                Reset
-              </Button>
-            </div>
+          </div>
+          
+          <div className={`flex gap-2 mt-4 ${isMobile ? 'col-span-2' : ''}`}>
+            <Button 
+              onClick={handleExport}
+              className="flex-1 bg-electric-green text-navy-deep hover:bg-electric-green/90 py-3"
+              size={isMobile ? "default" : "sm"}
+            >
+              Export PNG
+            </Button>
+            <Button 
+              onClick={handleReset}
+              variant="outline"
+              className="flex-1 border-white/20 text-white hover:bg-white/10 py-3"
+              size={isMobile ? "default" : "sm"}
+            >
+              Reset
+            </Button>
           </div>
         </div>
+        
+        {/* Mobile overlay backdrop */}
+        {isMobile && showControls && (
+          <div 
+            className="absolute inset-0 bg-black/20 z-0"
+            onClick={() => setShowControls(false)}
+          />
+        )}
       </div>
     </section>
   );
