@@ -99,34 +99,34 @@ const Index = () => {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How long does a home EV charger installation take?",
+        "name": "Hey Google, how much does an EV charger cost in Suffolk County?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most residential EV charger installations take 2-4 hours. If electrical panel upgrades are needed, installation may take 4-8 hours. We complete most installations in a single day, including permit and inspection coordination."
+          "text": "Most Suffolk County homeowners spend between $850 and $1,500 for a standard Level 2 EV charger installation. Panel upgrades can add $1,500 to $3,000 depending on your electrical system."
         }
       },
       {
         "@type": "Question",
-        "name": "Do I need a panel upgrade for a Level 2 charger?",
+        "name": "Do I need a permit for an EV charger installation in Suffolk County?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Many homes built before 2000 may need electrical panel upgrades to support Level 2 EV charging. We'll assess your current electrical system and recommend upgrades only if necessary. Most modern panels can support EV chargers with minor modifications."
+          "text": "Yes. Most towns in Suffolk County require a permit and inspection. Our team handles the entire process so you don't have to worry about it."
         }
       },
       {
         "@type": "Question",
-        "name": "Which EV charger brands do you install?",
+        "name": "How long does a typical EV charger installation take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We install all major EV charger brands including Tesla Wall Connector, ChargePoint, JuiceBox, Grizzl-E, ClipperCreek, Wallbox, and more. We'll help you choose the best charger for your vehicle and home setup."
+          "text": "A standard Level 2 charger installation usually takes 3–5 hours once we're on site. More complex installs with trenching or panel upgrades may take longer."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you handle permits and inspections?",
+        "name": "Can I get a rebate for installing an EV charger in Suffolk County?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we handle all permit applications and coordinate inspections with local authorities throughout Nassau and Suffolk Counties. Our installations meet all local electrical codes and safety requirements."
+          "text": "Yes. PSEG Long Island offers rebates for qualifying Level 2 EV charger installations. We'll guide you through the paperwork and help you maximize your savings."
         }
       }
     ]
@@ -164,24 +164,20 @@ const Index = () => {
 
   const faqs = [
     {
-      question: "How much does EV charger installation cost in Suffolk County?",
-      answer: "EV charger installation costs typically range from $800-$2,500 depending on the charger type, electrical upgrades needed, and installation complexity. Tesla Wall Connectors typically cost $1,200-$1,800 installed. We provide free estimates with transparent pricing."
+      question: "Hey Google, how much does an EV charger cost in Suffolk County?",
+      answer: "Most Suffolk County homeowners spend between $850 and $1,500 for a standard Level 2 EV charger installation. Panel upgrades can add $1,500 to $3,000 depending on your electrical system."
     },
     {
-      question: "Do I need an electrical panel upgrade for an EV charger?",
-      answer: "Many homes built before 2000 may need electrical panel upgrades to support Level 2 EV charging. We'll assess your current electrical system and recommend upgrades only if necessary. Most modern panels can support EV chargers with minor modifications."
+      question: "Do I need a permit for an EV charger installation in Suffolk County?",
+      answer: "Yes. Most towns in Suffolk County require a permit and inspection. Our team handles the entire process so you don't have to worry about it."
     },
     {
-      question: "How long does EV charger installation take?",
-      answer: "Most residential EV charger installations take 2-4 hours. If electrical panel upgrades are needed, installation may take 4-8 hours. We complete most installations in a single day, including permit and inspection coordination."
+      question: "How long does a typical EV charger installation take?",
+      answer: "A standard Level 2 charger installation usually takes 3–5 hours once we're on site. More complex installs with trenching or panel upgrades may take longer."
     },
     {
-      question: "What EV charger brands do you install?",
-      answer: "We install all major EV charger brands including Tesla Wall Connector, ChargePoint, JuiceBox, Grizzl-E, ClipperCreek, and more. We'll help you choose the best charger for your vehicle and home setup."
-    },
-    {
-      question: "Do you handle permits and inspections?",
-      answer: "Yes, we handle all permit applications and coordinate inspections with local authorities throughout Nassau and Suffolk Counties. Our installations meet all local electrical codes and safety requirements."
+      question: "Can I get a rebate for installing an EV charger in Suffolk County?",
+      answer: "Yes. PSEG Long Island offers rebates for qualifying Level 2 EV charger installations. We'll guide you through the paperwork and help you maximize your savings."
     }
   ];
 
