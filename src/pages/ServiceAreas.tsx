@@ -52,6 +52,66 @@ const ServiceAreas = () => {
       name: "Riverhead",
       slug: "riverhead",
       description: "Fast, local EV charger installs across the East End"
+    },
+    {
+      name: "Commack",
+      slug: "commack",
+      description: "Professional EV charger installation in Commack residential areas"
+    },
+    {
+      name: "Hauppauge",
+      slug: "hauppauge",
+      description: "Expert EV charging solutions for Hauppauge homes and businesses"
+    },
+    {
+      name: "Port Jefferson",
+      slug: "port-jefferson",
+      description: "Coastal EV charger installation for Port Jefferson waterfront properties"
+    },
+    {
+      name: "Babylon",
+      slug: "babylon",
+      description: "South Shore EV charging installations for Babylon residents"
+    },
+    {
+      name: "Bay Shore",
+      slug: "bay-shore",
+      description: "Waterfront EV charger installation for Bay Shore properties"
+    },
+    {
+      name: "Sayville",
+      slug: "sayville",
+      description: "Professional EV charging solutions for Sayville homeowners"
+    },
+    {
+      name: "Farmingville",
+      slug: "farmingville",
+      description: "Central Suffolk EV charger installation in Farmingville"
+    },
+    {
+      name: "Holbrook",
+      slug: "holbrook",
+      description: "Residential EV charging installations for Holbrook properties"
+    },
+    {
+      name: "Southampton",
+      slug: "southampton",
+      description: "Luxury Hamptons EV charger installation for Southampton estates"
+    },
+    {
+      name: "East Hampton",
+      slug: "east-hampton",
+      description: "Premium EV charging solutions for East Hampton luxury properties"
+    },
+    {
+      name: "Montauk",
+      slug: "montauk",
+      description: "End of island marine-grade EV charger installation"
+    },
+    {
+      name: "Shelter Island",
+      slug: "shelter-island",
+      description: "Island EV charging solutions with ferry logistics coordination"
     }
   ];
 
@@ -59,9 +119,9 @@ const ServiceAreas = () => {
     <>
       <Helmet>
         <title>Service Areas Suffolk County | EV Charger Installation Coverage</title>
-        <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip, Brookhaven, Stony Brook & Riverhead." />
+        <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering 21 towns including Ronkonkoma, Patchogue, Smithtown, Huntington, Hamptons, and more." />
         <meta property="og:title" content="Service Areas Suffolk County | EV Charger Installation Coverage" />
-        <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip, Brookhaven, Stony Brook & Riverhead." />
+        <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering 21 towns including Ronkonkoma, Patchogue, Smithtown, Huntington, Hamptons, and more." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -78,6 +138,18 @@ const ServiceAreas = () => {
               {"@type": "Place", "name": "Brookhaven, NY"},
               {"@type": "Place", "name": "Stony Brook, NY"},
               {"@type": "Place", "name": "Riverhead, NY"},
+              {"@type": "Place", "name": "Commack, NY"},
+              {"@type": "Place", "name": "Hauppauge, NY"},
+              {"@type": "Place", "name": "Port Jefferson, NY"},
+              {"@type": "Place", "name": "Babylon, NY"},
+              {"@type": "Place", "name": "Bay Shore, NY"},
+              {"@type": "Place", "name": "Sayville, NY"},
+              {"@type": "Place", "name": "Farmingville, NY"},
+              {"@type": "Place", "name": "Holbrook, NY"},
+              {"@type": "Place", "name": "Southampton, NY"},
+              {"@type": "Place", "name": "East Hampton, NY"},
+              {"@type": "Place", "name": "Montauk, NY"},
+              {"@type": "Place", "name": "Shelter Island, NY"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
             ]
