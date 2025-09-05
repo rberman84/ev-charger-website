@@ -58,6 +58,21 @@ const SmithtownService = () => {
           </div>
         </section>
 
+        {/* FAQ Schema - Set B (Permits/Rebates) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+              {"@type":"Question","name":"Do I need a permit to install an EV charger in Suffolk County?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most towns require a permit and inspection. We handle the application and scheduling."}},
+              {"@type":"Question","name":"Who approves EV charger installations in Suffolk?","acceptedAnswer":{"@type":"Answer","text":"Your local town building department (e.g., Smithtown, Islip, Brookhaven) reviews and inspects."}},
+              {"@type":"Question","name":"Is it legal to install my own EV charger?","acceptedAnswer":{"@type":"Answer","text":"In NY, a licensed electrician must perform the work to meet code and ensure safety."}},
+              {"@type":"Question","name":"Are there rebates for EV chargers on Long Island?","acceptedAnswer":{"@type":"Answer","text":"Yes. PSEG Long Island offers rebates for qualifying Level 2 installations. We'll guide you through it."}},
+              {"@type":"Question","name":"How do I apply for an EV charger rebate in Suffolk County?","acceptedAnswer":{"@type":"Answer","text":"We provide the documentation and walk you through the PSEG-LI process step by step."}}
+            ]
+          })}
+        </script>
+
         {/* Why Choose Us */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">

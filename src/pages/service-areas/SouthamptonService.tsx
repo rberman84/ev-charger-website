@@ -46,6 +46,21 @@ const SouthamptonService = () => {
           </div>
         </section>
 
+        {/* FAQ Schema - Set D (Safety/Value) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+              {"@type":"Question","name":"Is it safe to plug my EV into a regular outlet?","acceptedAnswer":{"@type":"Answer","text":"Safe for temporary use. A dedicated Level 2 circuit is safer and much faster for daily charging."}},
+              {"@type":"Question","name":"Can an EV charger overload my electrical system?","acceptedAnswer":{"@type":"Answer","text":"We perform a load calculation to ensure the panel and service can safely support the new circuit."}},
+              {"@type":"Question","name":"Can you install an EV charger outdoors in Suffolk winters?","acceptedAnswer":{"@type":"Answer","text":"Yes. We use weatherproof equipment, PVC conduit, and proper GFCI protection for outdoor installs."}},
+              {"@type":"Question","name":"Does installing an EV charger increase home value?","acceptedAnswer":{"@type":"Answer","text":"Yes. Homes with EV charging are more attractive to buyers and renters in EV-heavy areas."}},
+              {"@type":"Question","name":"What affects EV charger install cost the most?","acceptedAnswer":{"@type":"Answer","text":"Run length, wall type (finished vs garage), amperage, and whether a panel upgrade or trenching is needed."}}
+            ]
+          })}
+        </script>
+
         {/* Why Choose Us */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">

@@ -58,6 +58,21 @@ const HuntingtonService = () => {
           </div>
         </section>
 
+        {/* FAQ Schema - Set A (Cost-focused) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+              {"@type":"Question","name":"Hey Google, how much does it cost to install an EV charger in Suffolk County?","acceptedAnswer":{"@type":"Answer","text":"Most Suffolk homeowners spend $850–$1,500 for a Level 2 install. Panel upgrades may add $1,500–$3,000."}},
+              {"@type":"Question","name":"What's the cheapest way to install an EV charger at home?","acceptedAnswer":{"@type":"Answer","text":"Place the charger close to the panel to minimize conduit and labor. Longer runs and wall fishing increase cost."}},
+              {"@type":"Question","name":"Do I need a new electrical panel for an EV charger?","acceptedAnswer":{"@type":"Answer","text":"Not always. Many homes fit a Level 2 charger with a load calc. Older 100A services often need upgrades."}},
+              {"@type":"Question","name":"How long does a Level 2 EV charger installation take?","acceptedAnswer":{"@type":"Answer","text":"Most installs take 3–5 hours. Trenching or panel upgrades can add time."}},
+              {"@type":"Question","name":"Where's the best place to install an EV charger at home?","acceptedAnswer":{"@type":"Answer","text":"Garages or exterior walls closest to the driveway. Shortest safe route from panel to charger is ideal."}}
+            ]
+          })}
+        </script>
+
         {/* Why Choose Us */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">

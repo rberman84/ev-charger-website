@@ -46,6 +46,21 @@ const CommackService = () => {
           </div>
         </section>
 
+        {/* FAQ Schema - Set C (Technical/Equipment) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+              {"@type":"Question","name":"Can you install a Tesla Wall Connector in Suffolk County?","acceptedAnswer":{"@type":"Answer","text":"Yes. We install Tesla Wall Connectors and other brands like Emporia, Wallbox, ChargePoint."}},
+              {"@type":"Question","name":"What's the difference between Level 1 and Level 2 chargers?","acceptedAnswer":{"@type":"Answer","text":"Level 1 uses 120V and is slow. Level 2 uses 240V and can be up to 10x faster for daily use."}},
+              {"@type":"Question","name":"Will an EV charger raise my electric bill?","acceptedAnswer":{"@type":"Answer","text":"Charging adds to your bill but costs less than gas. A full charge often runs $10–$15 depending on rates."}},
+              {"@type":"Question","name":"Can you install more than one EV charger at my house?","acceptedAnswer":{"@type":"Answer","text":"Yes, with sufficient panel capacity. We can also use load-sharing or dual-port units."}},
+              {"@type":"Question","name":"How soon after I buy an EV can I get a charger installed?","acceptedAnswer":{"@type":"Answer","text":"Once permits are approved, most installs can be scheduled within 1–2 weeks."}}
+            ]
+          })}
+        </script>
+
         {/* Why Choose Us */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
