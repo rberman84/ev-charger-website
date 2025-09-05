@@ -25,6 +25,7 @@ import HuntingtonService from "./pages/service-areas/HuntingtonService";
 import HempsteadService from "./pages/service-areas/HempsteadService";
 import IslipService from "./pages/service-areas/IslipService";
 import BrookhavenService from "./pages/service-areas/BrookhavenService";
+import StonyBrookService from "./pages/service-areas/StonyBrookService";
 
 // Other Pages
 import Blog from "./pages/Blog";
@@ -70,6 +71,7 @@ const App = () => (
               <Route path="/service-areas/hempstead" element={<HempsteadService />} />
               <Route path="/service-areas/islip" element={<IslipService />} />
               <Route path="/service-areas/brookhaven" element={<BrookhavenService />} />
+              <Route path="/service-areas/stony-brook" element={<StonyBrookService />} />
               
               {/* Other Pages */}
               <Route path="/services" element={<Services />} />
