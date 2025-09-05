@@ -3,6 +3,7 @@ import HeroSection from "@/components/Sections/HeroSection";
 import ServicesSection from "@/components/Sections/ServicesSection";
 import EVInstallationAnimation from "@/components/Sections/EVInstallationAnimation";
 import EVCalculatorWidget from "@/components/Sections/EVCalculatorWidget";
+import EVPlannerWidget from "@/components/Sections/EVPlannerWidget";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -389,6 +390,13 @@ const Index = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <EVCalculatorWidget />
+        </div>
+      </section>
+
+      {/* EV Photo-Pin Placement Planner Widget */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <EVPlannerWidget />
         </div>
       </section>
 
