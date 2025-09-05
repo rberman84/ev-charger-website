@@ -83,6 +83,10 @@ const ServiceAreas = () => {
             ]
           })}
         </script>
+        {/* Suffolk County hub page override for global schema */}
+        <script>
+          {`window.__TOWN_SLUG_OVERRIDE__ = "suffolk-county";`}
+        </script>
       </Helmet>
 
       <SidebarProvider>
