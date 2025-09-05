@@ -1,5 +1,5 @@
 import SEOHead from "@/components/SEO/SEOHead";
-import HeroSection from "@/components/Sections/HeroSection";
+import AnimatedHero from "@/components/Sections/AnimatedHero";
 import ServicesSection from "@/components/Sections/ServicesSection";
 import EVInstallationAnimation from "@/components/Sections/EVInstallationAnimation";
 import EVCalculatorWidget from "@/components/Sections/EVCalculatorWidget";
@@ -192,7 +192,7 @@ const Index = () => {
         schemaData={combinedSchema}
       />
 
-      <HeroSection />
+      <AnimatedHero />
 
       <EVInstallationAnimation />
 
