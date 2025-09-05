@@ -102,7 +102,7 @@ const ServiceAreasSidebar = () => {
   };
 
   return (
-    <Sidebar className="w-80 border-r border-border">
+    <Sidebar className="w-64 border-r border-border">
       <SidebarHeader className="p-4 border-b border-border">
         <h3 className="text-lg font-semibold text-foreground mb-3">
           EV Charger Installation by Town
