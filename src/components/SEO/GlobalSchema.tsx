@@ -3,199 +3,146 @@ import { Helmet } from "react-helmet-async";
 
 const GlobalSchema = () => {
   useEffect(() => {
-    // Global JSON-LD auto-injection script
+    // GLOBAL FOOTER: JSON-LD injector for town pages
     const script = document.createElement('script');
     script.innerHTML = `
 (function(){
-  // BRAND CONFIG - Update these details
+  // ====== EDIT THESE ONCE ======
   const BRAND = {
+    legalName: "EV Charger Installation Suffolk",
     name: "EV Charger Installation Suffolk",
-    legalName: "EV Charger Installation Suffolk", 
-    domain: "evchargerinstallationsuffolk.com",
     phone: "+1-516-361-4068",
-    email: "info@evchargerinstallationsuffolk.com",
-    address: {
-      street: "123 Main Street",
-      city: "Ronkonkoma", 
-      state: "NY",
-      zip: "11779",
-      country: "US"
+    websiteRoot: "${window.location.origin}", // Dynamic domain
+    street: "123 Main Street",
+    city: "Ronkonkoma",
+    region: "NY",
+    postalCode: "11779",
+    priceRange: "$$",
+    logo: "/assets/hero-ev-charger.jpg",
+    heroImage: "/assets/hero-ev-charger.jpg",
+    sameAs: ["https://www.facebook.com/evchargerinstallationsuffolk"]
+  };
+
+  // Map slugs -> towns you publish
+  const TOWNS = {
+    "huntington":"Huntington","commack":"Commack","hauppauge":"Hauppauge","smithtown":"Smithtown",
+    "stony-brook":"Stony Brook","port-jefferson":"Port Jefferson","babylon":"Babylon","islip":"Islip",
+    "bay-shore":"Bay Shore","sayville":"Sayville","patchogue":"Patchogue","ronkonkoma":"Ronkonkoma",
+    "brookhaven":"Brookhaven","farmingville":"Farmingville","holbrook":"Holbrook","riverhead":"Riverhead",
+    "southampton":"Southampton","east-hampton":"East Hampton","montauk":"Montauk","shelter-island":"Shelter Island",
+    "hempstead":"Hempstead"
+  };
+
+  // Detect town from URL: /service-areas/<slug>/ or /ev-charger-installation-<slug>/
+  const path = location.pathname.replace(/\\/+$/,'');
+  const forced = window.__TOWN_SLUG_OVERRIDE__ || null; // optional override
+  const serviceAreaMatch = path.match(/\\/service-areas\\/([^/]+)$/i);
+  const installationMatch = path.match(/\\/ev-charger-installation-([^/]+)$/i);
+  
+  let slug = null;
+  if (forced) {
+    slug = forced;
+  } else if (serviceAreaMatch) {
+    slug = serviceAreaMatch[1].toLowerCase();
+  } else if (installationMatch) {
+    slug = installationMatch[1].toLowerCase();
+  }
+  
+  const town = slug && TOWNS[slug] ? TOWNS[slug] : null;
+
+  // Build IDs/URLs
+  const pageUrl = BRAND.websiteRoot + path + "/";
+  const orgId = BRAND.websiteRoot + "/#org";
+  const serviceId = pageUrl + "#service";
+
+  // ------- LocalBusiness (site-wide) -------
+  const localBusiness = {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "@id": orgId,
+    "name": BRAND.name,
+    "legalName": BRAND.legalName,
+    "url": BRAND.websiteRoot,
+    "telephone": BRAND.phone,
+    "priceRange": BRAND.priceRange,
+    "image": BRAND.websiteRoot + BRAND.heroImage,
+    "logo": BRAND.websiteRoot + BRAND.logo,
+    "address": {
+      "@type":"PostalAddress",
+      "streetAddress": BRAND.street,
+      "addressLocality": BRAND.city,
+      "addressRegion": BRAND.region,
+      "postalCode": BRAND.postalCode,
+      "addressCountry": "US"
     },
-    image: "https://evchargerinstallationsuffolk.com/og-image-ev-charger.jpg",
-    socialProfiles: [
-      "https://www.facebook.com/evchargerinstallationsuffolk"
+    "serviceArea": {
+      "@type":"GeoShape",
+      "circle": "40.90 -72.90 35mi"  // Suffolk County coverage
+    },
+    "areaServed": [{"@type":"AdministrativeArea","name":"Suffolk County, NY"}],
+    "sameAs": BRAND.sameAs,
+    "knowsAbout": [
+      "Level 2 EV charger installation","Panel upgrades","Load calculations",
+      "Trenching and conduit runs","Smart charger setup","PSEG-LI rebates"
     ]
   };
 
-  // TOWNS - Add all your service areas here
-  const TOWNS = {
-    "ronkonkoma": "Ronkonkoma",
-    "patchogue": "Patchogue", 
-    "smithtown": "Smithtown",
-    "huntington": "Huntington",
-    "hempstead": "Hempstead",
-    "islip": "Islip",
-    "brookhaven": "Brookhaven",
-    "stony-brook": "Stony Brook",
-    "riverhead": "Riverhead"
-  };
-
-  // Detect current page type
-  const forced = window.__TOWN_SLUG_OVERRIDE__;
-  const m = forced ? [null, forced] : location.pathname.match(/\\/service-areas\\/([^/]+)\\/?$/i);
-  const townSlug = m ? m[1] : null;
-  const townName = townSlug ? TOWNS[townSlug] : null;
-  
-  // Base LocalBusiness schema
-  const localBusiness = {
-    "@type": "LocalBusiness",
-    "@id": "https://" + BRAND.domain + "/#org",
-    "name": BRAND.name,
-    "legalName": BRAND.legalName,
-    "url": "https://" + BRAND.domain,
-    "telephone": BRAND.phone,
-    "email": BRAND.email,
-    "priceRange": "$$",
-    "image": BRAND.image,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": BRAND.address.street,
-      "addressLocality": BRAND.address.city,
-      "addressRegion": BRAND.address.state,
-      "postalCode": BRAND.address.zip,
-      "addressCountry": BRAND.address.country
-    },
+  // ------- Service (per-page, town-targeted when available) -------
+  const service = {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "@id": serviceId,
+    "serviceType": "EV Charger Installation",
+    "name": "EV Charger Installation" + (town ? " in " + town : ""),
+    "provider": {"@id": orgId},
+    "url": pageUrl,
+    "category": "electrician",
     "areaServed": [
-      {"@type": "AdministrativeArea", "name": "Suffolk County, NY"},
-      {"@type": "AdministrativeArea", "name": "Nassau County, NY"}
+      {"@type":"AdministrativeArea","name":"Suffolk County, NY"}
     ],
-    "sameAs": BRAND.socialProfiles,
-    "knowsAbout": [
-      "Level 2 EV charger installation",
-      "Tesla Wall Connector installation", 
-      "Panel upgrades and load calculations",
-      "Trenching and conduit runs",
-      "Smart charger setup and WiFi configuration",
-      "PSEG-LI rebates and permits",
-      "Commercial EV charging stations"
-    ],
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 40.8176,
-        "longitude": -73.0417
-      },
-      "geoRadius": 50000
+    "offers": {
+      "@type":"Offer",
+      "category":"EV charger installation",
+      "availability":"https://schema.org/InStock",
+      "priceSpecification": {"@type":"PriceSpecification","priceCurrency":"USD","minPrice":850,"maxPrice":1500}
     }
   };
+  if(town){ service.areaServed.push({"@type":"City","name":town,"address":{"@type":"PostalAddress","addressRegion":"NY"}}); }
 
-  // Schema graph to inject
-  let schemaGraph = [localBusiness];
-
-  // Add town-specific Service schema if on a town page
-  if (townName && townSlug) {
-    const townService = {
-      "@type": "Service",
-      "@id": "https://" + BRAND.domain + "/service-areas/" + townSlug + "/#service",
-      "serviceType": "EV Charger Installation",
-      "name": "EV Charger Installation in " + townName,
-      "description": "Professional EV charger installation services in " + townName + ", NY. Licensed electricians specializing in Level 2 home charging stations.",
-      "provider": {"@id": "https://" + BRAND.domain + "/#org"},
-      "areaServed": [
-        {"@type": "AdministrativeArea", "name": "Suffolk County, NY"},
-        {"@type": "City", "name": townName, "address": {"@type": "PostalAddress", "addressRegion": "NY"}}
-      ],
-      "url": "https://" + BRAND.domain + "/service-areas/" + townSlug + "/",
-      "category": "electrician",
-      "offers": {
-        "@type": "Offer",
-        "category": "EV charger installation",
-        "availability": "https://schema.org/InStock",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "priceCurrency": "USD",
-          "minPrice": 850,
-          "maxPrice": 1500
-        }
-      }
+  // ------- Conditional FAQ (only if a .faq block exists on page) -------
+  let faqNode = null;
+  const faqEl = document.querySelector('.faq');
+  if(faqEl){
+    const defaultFAQ = [
+      ["Do I need a permit for an EV charger in Suffolk County?","Most towns require a permit. We handle the application and inspection for you."],
+      ["How long does installation take?","Typical Level 2 installs take 3–5 hours once on site."],
+      ["What does it cost?","Most installs fall between $850–$1,500; panel upgrades add cost."]
+    ];
+    faqNode = {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity": defaultFAQ.map(([q,a])=>({
+        "@type":"Question","name":q,
+        "acceptedAnswer":{"@type":"Answer","text":a}
+      }))
     };
-    schemaGraph.push(townService);
-
-    // Add FAQ schema for town pages
-    const faqSchema = {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Do I need a permit for an EV charger in " + townName + "?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most towns in Suffolk County require a permit for EV charger installation. We handle the permit application and inspection process for you to ensure code compliance."
-          }
-        },
-        {
-          "@type": "Question", 
-          "name": "How long does EV charger installation take in " + townName + "?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Typical Level 2 EV charger installations take 3-5 hours once on site. This includes electrical work, mounting, and testing. Panel upgrades may require additional time."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does EV charger installation cost in " + townName + "?",
-          "acceptedAnswer": {
-            "@type": "Answer", 
-            "text": "Most EV charger installations range from $850 to $1,500. Panel upgrades typically add $1,500-$3,000. We provide free estimates with transparent pricing."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you handle PSEG-LI rebates for " + townName + " residents?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we help " + townName + " residents navigate PSEG-LI rebate programs and can assist with rebate applications to reduce your installation costs."
-          }
-        }
-      ]
-    };
-    schemaGraph.push(faqSchema);
   }
 
-  // Create and inject the JSON-LD
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": schemaGraph
-  };
-
-  // Remove any existing auto-injected schema
-  const existing = document.querySelector('script[data-schema="auto-injected"]');
-  if (existing) existing.remove();
-
-  // Inject new schema
-  const schemaScript = document.createElement('script');
-  schemaScript.type = 'application/ld+json';
-  schemaScript.setAttribute('data-schema', 'auto-injected');
-  schemaScript.textContent = JSON.stringify(schema, null, 2);
-  document.head.appendChild(schemaScript);
-
-  // GA4 tracking (optional)
-  if (typeof window !== 'undefined') {
-    window.dataLayer = window.dataLayer || [];
-    function track(ev, data) { 
-      window.dataLayer.push({event: ev, ...data}); 
-    }
-    
-    const trackingTown = townSlug || 'generic';
-    track('ld_injected', { 
-      town: trackingTown,
-      schema_types: schemaGraph.map(s => s['@type']).join(','),
-      page_type: townSlug ? 'town_page' : 'general_page'
-    });
+  // Inject helper
+  function injectLD(obj){
+    const s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.text = JSON.stringify(obj);
+    document.head.appendChild(s);
   }
 
-  console.log('Global Schema injected for:', townSlug || 'general page', schemaGraph.length, 'schemas');
+  injectLD(localBusiness);
+  injectLD(service);
+  if(faqNode) injectLD(faqNode);
+
+  // Optional: GA4 trace
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event:"ld_injected", town: town || "generic", hasFAQ: !!faqEl});
 })();
 `;
 
