@@ -30,6 +30,16 @@ const ServiceAreas = () => {
       name: "Hempstead",
       slug: "hempstead",
       description: "Professional EV charger installation for Hempstead communities"
+    },
+    {
+      name: "Islip",
+      slug: "islip",
+      description: "Fast, safe EV charging installations for Islip homeowners and businesses"
+    },
+    {
+      name: "Brookhaven",
+      slug: "brookhaven",
+      description: "Professional EV charger installation serving Brookhaven communities"
     }
   ];
 
@@ -37,9 +47,9 @@ const ServiceAreas = () => {
     <>
       <Helmet>
         <title>Service Areas Suffolk County | EV Charger Installation Coverage</title>
-        <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
+        <meta name="description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip & Brookhaven." />
         <meta property="og:title" content="Service Areas Suffolk County | EV Charger Installation Coverage" />
-        <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington & Hempstead." />
+        <meta property="og:description" content="EV Charger Installation Suffolk serves Suffolk County with professional EV charger installation. Licensed electricians covering Ronkonkoma, Patchogue, Smithtown, Huntington, Hempstead, Islip & Brookhaven." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -52,6 +62,8 @@ const ServiceAreas = () => {
               {"@type": "Place", "name": "Smithtown, NY"},
               {"@type": "Place", "name": "Huntington, NY"},
               {"@type": "Place", "name": "Hempstead, NY"},
+              {"@type": "Place", "name": "Islip, NY"},
+              {"@type": "Place", "name": "Brookhaven, NY"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"},
               {"@type": "AdministrativeArea", "name": "Nassau County"}
             ]
