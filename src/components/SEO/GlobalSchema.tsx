@@ -20,6 +20,8 @@ const GlobalSchema = () => {
     priceRange: "$$",
     logo: "/assets/hero-ev-charger.jpg",
     heroImage: "/assets/hero-ev-charger.jpg",
+    latitude: 40.814,
+    longitude: -73.112,
     sameAs: ["https://www.facebook.com/evchargerinstallationsuffolk"]
   };
 
@@ -75,6 +77,11 @@ const GlobalSchema = () => {
       "postalCode": BRAND.postalCode,
       "addressCountry": "US"
     },
+    "geo": { 
+      "@type": "GeoCoordinates", 
+      "latitude": BRAND.latitude, 
+      "longitude": BRAND.longitude 
+    },
     "serviceArea": {
       "@type":"GeoShape",
       "circle": "40.90 -72.90 35mi"  // Suffolk County coverage
@@ -128,6 +135,56 @@ const GlobalSchema = () => {
     };
   }
 
+  // ------- BreadcrumbList (navigation structure) -------
+  let breadcrumbNode = null;
+  if (town && slug) {
+    // For town pages: Home > Service Areas > Town Name
+    breadcrumbNode = {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement": [
+        { 
+          "@type": "ListItem", 
+          "position": 1, 
+          "name": "Home", 
+          "item": BRAND.websiteRoot + "/" 
+        },
+        { 
+          "@type": "ListItem", 
+          "position": 2, 
+          "name": "Service Areas", 
+          "item": BRAND.websiteRoot + "/service-areas/" 
+        },
+        { 
+          "@type": "ListItem", 
+          "position": 3, 
+          "name": "EV Charger Installation in " + town, 
+          "item": pageUrl 
+        }
+      ]
+    };
+  } else if (path.includes('/service-areas')) {
+    // For service areas main page: Home > Service Areas
+    breadcrumbNode = {
+      "@context":"https://schema.org",
+      "@type":"BreadcrumbList",
+      "itemListElement": [
+        { 
+          "@type": "ListItem", 
+          "position": 1, 
+          "name": "Home", 
+          "item": BRAND.websiteRoot + "/" 
+        },
+        { 
+          "@type": "ListItem", 
+          "position": 2, 
+          "name": "Service Areas", 
+          "item": pageUrl 
+        }
+      ]
+    };
+  }
+
   // Inject helper
   function injectLD(obj){
     const s = document.createElement("script");
@@ -139,10 +196,11 @@ const GlobalSchema = () => {
   injectLD(localBusiness);
   injectLD(service);
   if(faqNode) injectLD(faqNode);
+  if(breadcrumbNode) injectLD(breadcrumbNode);
 
   // Optional: GA4 trace
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({event:"ld_injected", town: town || "generic", hasFAQ: !!faqEl});
+  window.dataLayer.push({event:"ld_injected", town: town || "generic", hasFAQ: !!faqEl, hasBreadcrumb: !!breadcrumbNode});
 })();
 `;
 
