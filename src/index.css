@@ -125,3 +125,25 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Dynamic FAQ styles */
+.faq details {
+  @apply border border-border rounded-lg p-4 mb-2;
+}
+
+.faq summary {
+  @apply cursor-pointer font-semibold text-foreground;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq details[open] summary {
+  @apply mb-3;
+}
+
+.faq details div {
+  @apply text-muted-foreground;
+}
