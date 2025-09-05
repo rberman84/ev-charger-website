@@ -1,7 +1,7 @@
 import SEOHead from "@/components/SEO/SEOHead";
 import AnimatedHero from "@/components/Sections/AnimatedHero";
 import ServicesSection from "@/components/Sections/ServicesSection";
-import EVInstallationAnimation from "@/components/Sections/EVInstallationAnimation";
+import EV3DConfigurator from "@/components/Sections/EV3DConfigurator";
 import EVCalculatorWidget from "@/components/Sections/EVCalculatorWidget";
 import EVPlannerWidget from "@/components/Sections/EVPlannerWidget";
 import BeforeAfterSlider from "@/components/Sections/BeforeAfterSlider";
@@ -194,7 +194,7 @@ const Index = () => {
 
       <AnimatedHero />
 
-      <EVInstallationAnimation />
+      <EV3DConfigurator />
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-white">
