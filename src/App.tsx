@@ -23,6 +23,7 @@ import PatchogueService from "./pages/service-areas/PatchogueService";
 import SmithtownService from "./pages/service-areas/SmithtownService";
 import HuntingtonService from "./pages/service-areas/HuntingtonService";
 import HempsteadService from "./pages/service-areas/HempsteadService";
+import IslipService from "./pages/service-areas/IslipService";
 
 // Other Pages
 import Blog from "./pages/Blog";
@@ -66,6 +67,7 @@ const App = () => (
               <Route path="/service-areas/smithtown" element={<SmithtownService />} />
               <Route path="/service-areas/huntington" element={<HuntingtonService />} />
               <Route path="/service-areas/hempstead" element={<HempsteadService />} />
+              <Route path="/service-areas/islip" element={<IslipService />} />
               
               {/* Other Pages */}
               <Route path="/services" element={<Services />} />
