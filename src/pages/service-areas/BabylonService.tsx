@@ -12,6 +12,36 @@ const BabylonService = () => {
         schemaData={[
           {
             "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "EV Charger Installation Suffolk", 
+            "image": "https://evchargerinstallationsuffolk.com/og-image-ev-charger.jpg",
+            "@id": "https://evchargerinstallationsuffolk.com#company",
+            "url": "https://evchargerinstallationsuffolk.com",
+            "telephone": "+1-631-555-EVCS",
+            "address": {
+              "@type": "PostalAddress", 
+              "streetAddress": "123 Main St",
+              "addressLocality": "Babylon",
+              "addressRegion": "NY",
+              "postalCode": "11702",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.6959,
+              "longitude": -73.3262
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "07:00", 
+                "closes": "18:00"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "EV Charger Installation",
             "name": "EV Charger Installation Babylon, NY",
@@ -22,6 +52,28 @@ const BabylonService = () => {
               {"@type": "City", "name": "West Babylon"},
               {"@type": "City", "name": "North Babylon"},
               {"@type": "AdministrativeArea", "name": "Suffolk County"}
+            ]
+          },
+          {
+            "@context": "https://schema.org", 
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you install EV chargers in West Babylon and North Babylon?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we provide EV charger installation throughout the Town of Babylon including West Babylon, North Babylon, and Amityville areas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the average cost for EV charger installation in Babylon?",
+                "acceptedAnswer": {
+                  "@type": "Answer", 
+                  "text": "EV charger installation in Babylon typically ranges from $900-2200 depending on the charger type and electrical work required."
+                }
+              }
             ]
           }
         ]}

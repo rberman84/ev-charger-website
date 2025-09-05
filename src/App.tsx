@@ -47,6 +47,7 @@ import ServiceAreas from "./pages/ServiceAreas";
 import Services from "./pages/Services";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import EVChargerPlanner from "./pages/EVChargerPlanner";
 
 // Blog Posts
 import BestEVChargerLongIslandHomes from "./pages/blog/BestEVChargerLongIslandHomes";
@@ -106,6 +107,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
+              <Route path="/ev-charger-planner" element={<EVChargerPlanner />} />
               
               {/* Blog Posts */}
               <Route path="/blog/best-ev-charger-long-island-homes" element={<BestEVChargerLongIslandHomes />} />

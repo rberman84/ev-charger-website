@@ -19,11 +19,39 @@
     <meta name="twitter:title" content="EV Charger Installation Long Island | PowerUp EV" />
     <meta name="twitter:description" content="Professional EV charger installation throughout Long Island. Licensed Tesla & home charging experts." />
     <meta name="twitter:image" content="/og-image-ev-charger.jpg" />
+    
+    <!-- Performance Preloads -->
+    <link rel="preload" as="image" href="/assets/hero-ev.avif">
+    <link rel="preload" as="font" href="/fonts/Inter-600.woff2" type="font/woff2" crossorigin>
+    <link rel="modulepreload" href="https://unpkg.com/three@0.156.1/build/three.module.js">
   </head>
 
   <body>
     <div id="root"></div>
     <script src="/dynamic-faq.js"></script>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Global Performance Optimizations -->
+    <script>
+      // Performance optimizations
+      const DPR = Math.min(1.5, window.devicePixelRatio||1);
+      
+      // FPS cap for better performance
+      let last=0; const FPS=30, step=1000/FPS;
+      
+      // Visibility pause
+      document.addEventListener('visibilitychange',()=>{ 
+        if (window.app) window.app.paused = document.hidden; 
+      });
+      
+      // Lazy initialization for hero sections
+      const start=()=>window.initHero&&initHero();
+      const heroEl = document.getElementById('ev-hero');
+      if (heroEl) {
+        new IntersectionObserver(([e],o)=>{ 
+          if(e.isIntersecting){ start(); o.disconnect(); }
+        },{rootMargin:'200px'}).observe(heroEl);
+      }
+    </script>
   </body>
 </html>

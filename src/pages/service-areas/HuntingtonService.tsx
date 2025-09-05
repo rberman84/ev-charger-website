@@ -12,11 +12,51 @@ const HuntingtonService = () => {
         schemaData={[
           {
             "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "EV Charger Installation Suffolk",
+            "image": "https://evchargerinstallationsuffolk.com/og-image-ev-charger.jpg",
+            "@id": "https://evchargerinstallationsuffolk.com#company",
+            "url": "https://evchargerinstallationsuffolk.com",
+            "telephone": "+1-631-555-EVCS",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "123 Main St",
+              "addressLocality": "Huntington",
+              "addressRegion": "NY",
+              "postalCode": "11743",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.8677,
+              "longitude": -73.4255
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "07:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "16:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/evchargerinstallationsuffolk",
+              "https://www.instagram.com/evchargerinstallationsuffolk"
+            ]
+          },
+          {
+            "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "EV Charger Installation",
             "name": "EV Charger Installation Huntington, NY",
             "description": "Local EV charger installers in Huntington, NY. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant.",
-            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "provider": {"@type": "LocalBusiness", "@id": "https://evchargerinstallationsuffolk.com#company"},
             "areaServed": [
               {"@type": "City", "name": "Huntington"},
               {"@type": "City", "name": "Huntington Station"},
@@ -30,9 +70,47 @@ const HuntingtonService = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
-              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://powerupevli.com/service-areas"},
-              {"@type": "ListItem", "position": 3, "name": "Huntington, NY", "item": "https://powerupevli.com/service-areas/huntington"}
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://evchargerinstallationsuffolk.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://evchargerinstallationsuffolk.com/service-areas"},
+              {"@type": "ListItem", "position": 3, "name": "Huntington, NY", "item": "https://evchargerinstallationsuffolk.com/service-areas/huntington"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does EV charger installation take in Huntington?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most residential EV charger installations in Huntington take 2-4 hours. Complex installations requiring electrical panel upgrades may take a full day."
+                }
+              },
+              {
+                "@type": "Question", 
+                "name": "Do I need permits for EV charger installation in Huntington, NY?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, EV charger installations in Huntington require electrical permits. We handle all permit applications and inspections for you."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What EV charger brands do you install in Huntington?",
+                "acceptedAnswer": {
+                  "@type": "Answer", 
+                  "text": "We install all major EV charger brands in Huntington including Tesla Wall Connector, ChargePoint, JuiceBox, Emporia Vue, and Grizzl-E chargers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does EV charger installation cost in Huntington?", 
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EV charger installation costs in Huntington typically range from $800-2500 depending on charger type, electrical work needed, and distance from panel."
+                }
+              }
             ]
           }
         ]}

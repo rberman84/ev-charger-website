@@ -12,11 +12,44 @@ const IslipService = () => {
         schemaData={[
           {
             "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "EV Charger Installation Suffolk",
+            "image": "https://evchargerinstallationsuffolk.com/og-image-ev-charger.jpg", 
+            "@id": "https://evchargerinstallationsuffolk.com#company",
+            "url": "https://evchargerinstallationsuffolk.com",
+            "telephone": "+1-631-555-EVCS",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "123 Main St",
+              "addressLocality": "Islip",
+              "addressRegion": "NY", 
+              "postalCode": "11751",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 40.7015,
+              "longitude": -73.2090
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "07:00",
+                "closes": "18:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/evchargerinstallationsuffolk"
+            ]
+          },
+          {
+            "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "EV Charger Installation",
             "name": "EV Charger Installation Islip, NY",
             "description": "Local EV charger installers in Islip, NY. Tesla, ChargePoint, JuiceBox. Licensed, insured, code-compliant.",
-            "provider": {"@type": "LocalBusiness", "@id": "https://powerupevli.com#company"},
+            "provider": {"@type": "LocalBusiness", "@id": "https://evchargerinstallationsuffolk.com#company"},
             "areaServed": [
               {"@type": "City", "name": "Islip"},
               {"@type": "City", "name": "Bay Shore"},
@@ -30,9 +63,39 @@ const IslipService = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://powerupevli.com/"},
-              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://powerupevli.com/service-areas"},
-              {"@type": "ListItem", "position": 3, "name": "Islip, NY", "item": "https://powerupevli.com/service-areas/islip"}
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://evchargerinstallationsuffolk.com/"},
+              {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://evchargerinstallationsuffolk.com/service-areas"},
+              {"@type": "ListItem", "position": 3, "name": "Islip, NY", "item": "https://evchargerinstallationsuffolk.com/service-areas/islip"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage", 
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What permits are needed for EV charger installation in Islip?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EV charger installations in Islip require electrical permits from the Town of Islip Building Department. We handle all permits and inspections."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does Tesla Wall Connector installation cost in Islip?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tesla Wall Connector installation in Islip typically costs $1200-2000 including the charger, depending on electrical work required."
+                }
+              },
+              {
+                "@type": "Question", 
+                "name": "Do you service Bay Shore and East Islip for EV charger installation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we provide EV charger installation throughout the Town of Islip including Bay Shore, East Islip, West Islip, and Central Islip."
+                }
+              }
             ]
           }
         ]}
