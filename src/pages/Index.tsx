@@ -4,6 +4,8 @@ import ServicesSection from "@/components/Sections/ServicesSection";
 import EVInstallationAnimation from "@/components/Sections/EVInstallationAnimation";
 import EVCalculatorWidget from "@/components/Sections/EVCalculatorWidget";
 import EVPlannerWidget from "@/components/Sections/EVPlannerWidget";
+import BeforeAfterSlider from "@/components/Sections/BeforeAfterSlider";
+import ZipInfoPanel from "@/components/Sections/ZipInfoPanel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -303,6 +305,13 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Before/After Slider Section */}
+      <section className="py-16 bg-gradient-subtle">
+        <div className="container mx-auto px-4">
+          <BeforeAfterSlider />
+        </div>
+      </section>
+
       {/* Reviews Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -341,6 +350,13 @@ const Index = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ZIP Info Panel Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <ZipInfoPanel />
         </div>
       </section>
 
