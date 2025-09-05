@@ -30,21 +30,21 @@ const ServiceAreasSidebar = () => {
       title: "North/West Suffolk",
       towns: [
         { name: "Huntington", slug: "huntington", available: true },
-        { name: "Commack", slug: "commack", available: false },
-        { name: "Hauppauge", slug: "hauppauge", available: false },
+        { name: "Commack", slug: "commack", available: true },
+        { name: "Hauppauge", slug: "hauppauge", available: true },
         { name: "Smithtown", slug: "smithtown", available: true },
         { name: "Stony Brook", slug: "stony-brook", available: true },
-        { name: "Port Jefferson", slug: "port-jefferson", available: false },
+        { name: "Port Jefferson", slug: "port-jefferson", available: true },
       ]
     },
     {
       id: "south",
       title: "South Shore", 
       towns: [
-        { name: "Babylon", slug: "babylon", available: false },
+        { name: "Babylon", slug: "babylon", available: true },
         { name: "Islip", slug: "islip", available: true },
-        { name: "Bay Shore", slug: "bay-shore", available: false },
-        { name: "Sayville", slug: "sayville", available: false },
+        { name: "Bay Shore", slug: "bay-shore", available: true },
+        { name: "Sayville", slug: "sayville", available: true },
         { name: "Patchogue", slug: "patchogue", available: true },
         { name: "Ronkonkoma", slug: "ronkonkoma", available: true },
       ]
@@ -54,13 +54,13 @@ const ServiceAreasSidebar = () => {
       title: "Central/East & Hamptons",
       towns: [
         { name: "Brookhaven", slug: "brookhaven", available: true },
-        { name: "Farmingville", slug: "farmingville", available: false },
-        { name: "Holbrook", slug: "holbrook", available: false },
+        { name: "Farmingville", slug: "farmingville", available: true },
+        { name: "Holbrook", slug: "holbrook", available: true },
         { name: "Riverhead", slug: "riverhead", available: true },
-        { name: "Southampton", slug: "southampton", available: false },
-        { name: "East Hampton", slug: "east-hampton", available: false },
-        { name: "Montauk", slug: "montauk", available: false },
-        { name: "Shelter Island", slug: "shelter-island", available: false },
+        { name: "Southampton", slug: "southampton", available: true },
+        { name: "East Hampton", slug: "east-hampton", available: true },
+        { name: "Montauk", slug: "montauk", available: true },
+        { name: "Shelter Island", slug: "shelter-island", available: true },
       ]
     }
   ];

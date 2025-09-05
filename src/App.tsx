@@ -27,6 +27,18 @@ import IslipService from "./pages/service-areas/IslipService";
 import BrookhavenService from "./pages/service-areas/BrookhavenService";
 import StonyBrookService from "./pages/service-areas/StonyBrookService";
 import RiverheadService from "./pages/service-areas/RiverheadService";
+import CommackService from "./pages/service-areas/CommackService";
+import HauppaugeService from "./pages/service-areas/HauppaugeService";
+import PortJeffersonService from "./pages/service-areas/PortJeffersonService";
+import BabylonService from "./pages/service-areas/BabylonService";
+import BayShoreService from "./pages/service-areas/BayShoreService";
+import SayvilleService from "./pages/service-areas/SayvilleService";
+import FarmingvilleService from "./pages/service-areas/FarmingvilleService";
+import HolbrookService from "./pages/service-areas/HolbrookService";
+import SouthamptonService from "./pages/service-areas/SouthamptonService";
+import EastHamptonService from "./pages/service-areas/EastHamptonService";
+import MontaukService from "./pages/service-areas/MontaukService";
+import ShelterIslandService from "./pages/service-areas/ShelterIslandService";
 
 // Other Pages
 import Blog from "./pages/Blog";
@@ -74,6 +86,18 @@ const App = () => (
               <Route path="/service-areas/brookhaven" element={<BrookhavenService />} />
               <Route path="/service-areas/stony-brook" element={<StonyBrookService />} />
               <Route path="/service-areas/riverhead" element={<RiverheadService />} />
+              <Route path="/service-areas/commack" element={<CommackService />} />
+              <Route path="/service-areas/hauppauge" element={<HauppaugeService />} />
+              <Route path="/service-areas/port-jefferson" element={<PortJeffersonService />} />
+              <Route path="/service-areas/babylon" element={<BabylonService />} />
+              <Route path="/service-areas/bay-shore" element={<BayShoreService />} />
+              <Route path="/service-areas/sayville" element={<SayvilleService />} />
+              <Route path="/service-areas/farmingville" element={<FarmingvilleService />} />
+              <Route path="/service-areas/holbrook" element={<HolbrookService />} />
+              <Route path="/service-areas/southampton" element={<SouthamptonService />} />
+              <Route path="/service-areas/east-hampton" element={<EastHamptonService />} />
+              <Route path="/service-areas/montauk" element={<MontaukService />} />
+              <Route path="/service-areas/shelter-island" element={<ShelterIslandService />} />
               
               {/* Other Pages */}
               <Route path="/services" element={<Services />} />
